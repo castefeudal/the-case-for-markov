@@ -1105,6 +1105,39 @@ body.hr .langs button.active .lang-code{color:#fff}
   .lang-flag,.language-flag-svg{print-color-adjust:exact;-webkit-print-color-adjust:exact}
 }
 
+
+/* === Offer polish update: identity, readability, volume === */
+.hero-name{max-width:740px}
+.identity-row{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 6px}
+.identity-chip{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid rgba(229,196,127,.22);background:rgba(12,13,16,.68);backdrop-filter:blur(14px);border-radius:999px;box-shadow:0 10px 35px rgba(0,0,0,.18);font-size:.78rem;line-height:1.15;color:#ece5d6}
+.identity-chip span{font-family:var(--mono);font-size:.67rem;letter-spacing:.08em;text-transform:uppercase;color:#c8bda8}
+.identity-chip strong{font-size:.92rem;font-weight:800;color:#fff;display:inline-flex;align-items:center;gap:8px}
+.identity-chip-primary{border-color:rgba(229,196,127,.36);background:linear-gradient(145deg,rgba(229,196,127,.13),rgba(12,13,16,.75))}
+.flag-emoji{font-style:normal;font-size:1.04em;line-height:1}
+.hero-prooflist{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0;max-width:860px}
+.hero-proof-pill{padding:11px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035);backdrop-filter:blur(12px);font-size:.86rem;line-height:1.2;color:#e6e0d6;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.hero-facts{grid-template-columns:repeat(4,1fr)!important;max-width:900px!important;margin-top:34px!important}
+.hero-facts strong{font-size:1.52rem!important;line-height:1.05}
+.hero-facts span{font-size:.68rem!important;letter-spacing:.12em!important}
+.visual{min-height:760px!important;justify-content:flex-end!important;padding-right:6px}
+.orbit{width:min(42vw,620px)!important;opacity:.94}
+#headStage.portrait,.portrait#headStage{width:min(100%,610px)!important;aspect-ratio:5/6!important;border-radius:34px!important;transform:translateY(4px)!important;border:1px solid rgba(229,196,127,.32)!important;box-shadow:0 32px 120px rgba(0,0,0,.42),0 0 0 1px rgba(255,255,255,.03) inset!important;overflow:visible!important;background:linear-gradient(180deg,#121418,#0a0b0d)!important}
+#headStage:after{content:"";position:absolute;inset:auto 7% -20px;height:74px;border-radius:50%;background:radial-gradient(circle,rgba(229,196,127,.28),rgba(229,196,127,0) 68%);filter:blur(26px);z-index:0}
+#headStage .head-motion-stack{inset:0!important;border-radius:30px!important;overflow:hidden!important;z-index:1}
+.portrait-nation-badge{position:absolute;left:18px;top:18px;z-index:7;display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:14px;background:rgba(10,11,13,.76);backdrop-filter:blur(16px);border:1px solid rgba(229,196,127,.28);box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.portrait-nation-badge span{font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;color:#cfb87f}
+.portrait-nation-badge strong{display:inline-flex;gap:7px;align-items:center;font-size:.93rem;color:#fff}
+.photolabel{left:20px!important;right:20px!important;bottom:20px!important;padding:16px 18px!important;border-radius:18px!important;align-items:center!important;background:linear-gradient(145deg,rgba(10,11,13,.84),rgba(22,22,25,.72))!important;border-color:rgba(255,255,255,.12)!important}
+.photolabel strong{font-size:1.16rem!important;font-family:var(--sans)!important;font-weight:800!important;letter-spacing:-.02em!important}
+.photolabel span{font-size:.69rem!important;color:#ded2bb!important;letter-spacing:.16em!important;margin-top:6px!important}
+.portrait-nation-line{display:flex;align-items:center;gap:8px;margin-top:10px;color:#cdbf9c;font-size:.76rem;font-weight:700;line-height:1.2}
+.portrait-nation-line span{margin:0!important;font-size:.64rem!important;color:#bdaa81!important;letter-spacing:.12em!important}
+.portrait-nation-line b{font-size:.86rem;color:#fff}
+.motion-badge{right:-6px!important;top:12%!important;font-size:.72rem!important;padding:13px 16px!important;border-radius:16px!important}
+#roleLead{max-width:790px!important;font-size:1.24rem!important;line-height:1.66!important;color:#dfd7ca!important}
+@media(max-width:1120px){.hero-facts{grid-template-columns:repeat(2,1fr)!important}.visual{min-height:700px!important;justify-content:center!important;padding-right:0}.portrait#headStage{width:min(100%,560px)!important}}
+@media(max-width:760px){.identity-row{margin:14px 0 2px}.identity-chip{width:100%;justify-content:space-between;border-radius:18px}.hero-prooflist{display:grid;grid-template-columns:1fr;max-width:100%}.hero-proof-pill{font-size:.9rem;padding:12px 14px}.hero-facts{grid-template-columns:1fr!important}.visual{min-height:auto!important;padding:18px 0 8px!important}.portrait#headStage{width:min(100%,92vw)!important;border-radius:24px!important}.portrait-nation-badge{left:14px;top:14px;padding:9px 12px}.photolabel{left:14px!important;right:14px!important;bottom:14px!important;padding:14px 15px!important}.motion-badge{margin-top:14px!important}}
+
 </style>
 <link href="https://markovmade.com/cv" rel="canonical"/>
 <script type="application/ld+json">
@@ -1196,6 +1229,39 @@ section{padding:122px 0!important}.head{gap:68px!important;margin-bottom:58px!im
 @media(max-width:480px){.hero .actions a,.hero .actions button{width:100%}.roletabs{display:grid!important}.roletab{width:100%}.photolabel{left:12px!important;right:12px!important;bottom:12px!important}.quote{padding:17px!important}}
 @media(prefers-reduced-motion:reduce){.portrait{transform:none!important}.portrait video{transition:none!important}}
 @media print{.portrait,.visual{display:none!important}.hero{padding:0 0 10mm!important}.herogrid{display:block!important}}
+
+/* === Offer polish update: identity, readability, volume === */
+.hero-name{max-width:740px}
+.identity-row{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 6px}
+.identity-chip{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid rgba(229,196,127,.22);background:rgba(12,13,16,.68);backdrop-filter:blur(14px);border-radius:999px;box-shadow:0 10px 35px rgba(0,0,0,.18);font-size:.78rem;line-height:1.15;color:#ece5d6}
+.identity-chip span{font-family:var(--mono);font-size:.67rem;letter-spacing:.08em;text-transform:uppercase;color:#c8bda8}
+.identity-chip strong{font-size:.92rem;font-weight:800;color:#fff;display:inline-flex;align-items:center;gap:8px}
+.identity-chip-primary{border-color:rgba(229,196,127,.36);background:linear-gradient(145deg,rgba(229,196,127,.13),rgba(12,13,16,.75))}
+.flag-emoji{font-style:normal;font-size:1.04em;line-height:1}
+.hero-prooflist{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0;max-width:860px}
+.hero-proof-pill{padding:11px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035);backdrop-filter:blur(12px);font-size:.86rem;line-height:1.2;color:#e6e0d6;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.hero-facts{grid-template-columns:repeat(4,1fr)!important;max-width:900px!important;margin-top:34px!important}
+.hero-facts strong{font-size:1.52rem!important;line-height:1.05}
+.hero-facts span{font-size:.68rem!important;letter-spacing:.12em!important}
+.visual{min-height:760px!important;justify-content:flex-end!important;padding-right:6px}
+.orbit{width:min(42vw,620px)!important;opacity:.94}
+#headStage.portrait,.portrait#headStage{width:min(100%,610px)!important;aspect-ratio:5/6!important;border-radius:34px!important;transform:translateY(4px)!important;border:1px solid rgba(229,196,127,.32)!important;box-shadow:0 32px 120px rgba(0,0,0,.42),0 0 0 1px rgba(255,255,255,.03) inset!important;overflow:visible!important;background:linear-gradient(180deg,#121418,#0a0b0d)!important}
+#headStage:after{content:"";position:absolute;inset:auto 7% -20px;height:74px;border-radius:50%;background:radial-gradient(circle,rgba(229,196,127,.28),rgba(229,196,127,0) 68%);filter:blur(26px);z-index:0}
+#headStage .head-motion-stack{inset:0!important;border-radius:30px!important;overflow:hidden!important;z-index:1}
+.portrait-nation-badge{position:absolute;left:18px;top:18px;z-index:7;display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:14px;background:rgba(10,11,13,.76);backdrop-filter:blur(16px);border:1px solid rgba(229,196,127,.28);box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.portrait-nation-badge span{font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;color:#cfb87f}
+.portrait-nation-badge strong{display:inline-flex;gap:7px;align-items:center;font-size:.93rem;color:#fff}
+.photolabel{left:20px!important;right:20px!important;bottom:20px!important;padding:16px 18px!important;border-radius:18px!important;align-items:center!important;background:linear-gradient(145deg,rgba(10,11,13,.84),rgba(22,22,25,.72))!important;border-color:rgba(255,255,255,.12)!important}
+.photolabel strong{font-size:1.16rem!important;font-family:var(--sans)!important;font-weight:800!important;letter-spacing:-.02em!important}
+.photolabel span{font-size:.69rem!important;color:#ded2bb!important;letter-spacing:.16em!important;margin-top:6px!important}
+.portrait-nation-line{display:flex;align-items:center;gap:8px;margin-top:10px;color:#cdbf9c;font-size:.76rem;font-weight:700;line-height:1.2}
+.portrait-nation-line span{margin:0!important;font-size:.64rem!important;color:#bdaa81!important;letter-spacing:.12em!important}
+.portrait-nation-line b{font-size:.86rem;color:#fff}
+.motion-badge{right:-6px!important;top:12%!important;font-size:.72rem!important;padding:13px 16px!important;border-radius:16px!important}
+#roleLead{max-width:790px!important;font-size:1.24rem!important;line-height:1.66!important;color:#dfd7ca!important}
+@media(max-width:1120px){.hero-facts{grid-template-columns:repeat(2,1fr)!important}.visual{min-height:700px!important;justify-content:center!important;padding-right:0}.portrait#headStage{width:min(100%,560px)!important}}
+@media(max-width:760px){.identity-row{margin:14px 0 2px}.identity-chip{width:100%;justify-content:space-between;border-radius:18px}.hero-prooflist{display:grid;grid-template-columns:1fr;max-width:100%}.hero-proof-pill{font-size:.9rem;padding:12px 14px}.hero-facts{grid-template-columns:1fr!important}.visual{min-height:auto!important;padding:18px 0 8px!important}.portrait#headStage{width:min(100%,92vw)!important;border-radius:24px!important}.portrait-nation-badge{left:14px;top:14px;padding:9px 12px}.photolabel{left:14px!important;right:14px!important;bottom:14px!important;padding:14px 15px!important}.motion-badge{margin-top:14px!important}}
+
 </style><style id="recruiter-readability-overrides">
 /* =====================================================================
    RECRUITER-FIRST READABILITY EDITION
@@ -1358,6 +1424,39 @@ section[id]{scroll-margin-top:92px}
 .offer-card p{margin-bottom:24px!important}
 .offer-output{position:static!important;inset:auto!important;left:auto!important;right:auto!important;bottom:auto!important;margin-top:auto!important;padding-top:18px!important;grid-template-columns:auto 1fr!important}
 @media(max-width:760px){.hero h1 span:first-child{font-size:.34em!important;margin-bottom:9px!important}.offer-output{grid-template-columns:1fr!important;gap:7px!important}.offer-card p{margin-bottom:18px!important}}
+
+/* === Offer polish update: identity, readability, volume === */
+.hero-name{max-width:740px}
+.identity-row{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 6px}
+.identity-chip{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid rgba(229,196,127,.22);background:rgba(12,13,16,.68);backdrop-filter:blur(14px);border-radius:999px;box-shadow:0 10px 35px rgba(0,0,0,.18);font-size:.78rem;line-height:1.15;color:#ece5d6}
+.identity-chip span{font-family:var(--mono);font-size:.67rem;letter-spacing:.08em;text-transform:uppercase;color:#c8bda8}
+.identity-chip strong{font-size:.92rem;font-weight:800;color:#fff;display:inline-flex;align-items:center;gap:8px}
+.identity-chip-primary{border-color:rgba(229,196,127,.36);background:linear-gradient(145deg,rgba(229,196,127,.13),rgba(12,13,16,.75))}
+.flag-emoji{font-style:normal;font-size:1.04em;line-height:1}
+.hero-prooflist{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0;max-width:860px}
+.hero-proof-pill{padding:11px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035);backdrop-filter:blur(12px);font-size:.86rem;line-height:1.2;color:#e6e0d6;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.hero-facts{grid-template-columns:repeat(4,1fr)!important;max-width:900px!important;margin-top:34px!important}
+.hero-facts strong{font-size:1.52rem!important;line-height:1.05}
+.hero-facts span{font-size:.68rem!important;letter-spacing:.12em!important}
+.visual{min-height:760px!important;justify-content:flex-end!important;padding-right:6px}
+.orbit{width:min(42vw,620px)!important;opacity:.94}
+#headStage.portrait,.portrait#headStage{width:min(100%,610px)!important;aspect-ratio:5/6!important;border-radius:34px!important;transform:translateY(4px)!important;border:1px solid rgba(229,196,127,.32)!important;box-shadow:0 32px 120px rgba(0,0,0,.42),0 0 0 1px rgba(255,255,255,.03) inset!important;overflow:visible!important;background:linear-gradient(180deg,#121418,#0a0b0d)!important}
+#headStage:after{content:"";position:absolute;inset:auto 7% -20px;height:74px;border-radius:50%;background:radial-gradient(circle,rgba(229,196,127,.28),rgba(229,196,127,0) 68%);filter:blur(26px);z-index:0}
+#headStage .head-motion-stack{inset:0!important;border-radius:30px!important;overflow:hidden!important;z-index:1}
+.portrait-nation-badge{position:absolute;left:18px;top:18px;z-index:7;display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:14px;background:rgba(10,11,13,.76);backdrop-filter:blur(16px);border:1px solid rgba(229,196,127,.28);box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.portrait-nation-badge span{font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;color:#cfb87f}
+.portrait-nation-badge strong{display:inline-flex;gap:7px;align-items:center;font-size:.93rem;color:#fff}
+.photolabel{left:20px!important;right:20px!important;bottom:20px!important;padding:16px 18px!important;border-radius:18px!important;align-items:center!important;background:linear-gradient(145deg,rgba(10,11,13,.84),rgba(22,22,25,.72))!important;border-color:rgba(255,255,255,.12)!important}
+.photolabel strong{font-size:1.16rem!important;font-family:var(--sans)!important;font-weight:800!important;letter-spacing:-.02em!important}
+.photolabel span{font-size:.69rem!important;color:#ded2bb!important;letter-spacing:.16em!important;margin-top:6px!important}
+.portrait-nation-line{display:flex;align-items:center;gap:8px;margin-top:10px;color:#cdbf9c;font-size:.76rem;font-weight:700;line-height:1.2}
+.portrait-nation-line span{margin:0!important;font-size:.64rem!important;color:#bdaa81!important;letter-spacing:.12em!important}
+.portrait-nation-line b{font-size:.86rem;color:#fff}
+.motion-badge{right:-6px!important;top:12%!important;font-size:.72rem!important;padding:13px 16px!important;border-radius:16px!important}
+#roleLead{max-width:790px!important;font-size:1.24rem!important;line-height:1.66!important;color:#dfd7ca!important}
+@media(max-width:1120px){.hero-facts{grid-template-columns:repeat(2,1fr)!important}.visual{min-height:700px!important;justify-content:center!important;padding-right:0}.portrait#headStage{width:min(100%,560px)!important}}
+@media(max-width:760px){.identity-row{margin:14px 0 2px}.identity-chip{width:100%;justify-content:space-between;border-radius:18px}.hero-prooflist{display:grid;grid-template-columns:1fr;max-width:100%}.hero-proof-pill{font-size:.9rem;padding:12px 14px}.hero-facts{grid-template-columns:1fr!important}.visual{min-height:auto!important;padding:18px 0 8px!important}.portrait#headStage{width:min(100%,92vw)!important;border-radius:24px!important}.portrait-nation-badge{left:14px;top:14px;padding:9px 12px}.photolabel{left:14px!important;right:14px!important;bottom:14px!important;padding:14px 15px!important}.motion-badge{margin-top:14px!important}}
+
 </style>
 <style id="offer-max-impact-edition">
 /* PAVEL MARKOV — OFFER MAX IMPACT EDITION */
@@ -1420,6 +1519,39 @@ section{padding:108px 0!important}.head{gap:56px!important;margin-bottom:48px!im
 }
 @media(max-width:430px){.hero-name{font-size:clamp(3.25rem,16vw,4.65rem)!important}.impact-cost-row{grid-template-columns:1fr}.impact-metrics{grid-template-columns:1fr}.impact-ring strong{font-size:2.25rem}}
 @media print{.impact-calculator{display:none!important}.hero-utility{display:none!important}}
+
+/* === Offer polish update: identity, readability, volume === */
+.hero-name{max-width:740px}
+.identity-row{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 6px}
+.identity-chip{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid rgba(229,196,127,.22);background:rgba(12,13,16,.68);backdrop-filter:blur(14px);border-radius:999px;box-shadow:0 10px 35px rgba(0,0,0,.18);font-size:.78rem;line-height:1.15;color:#ece5d6}
+.identity-chip span{font-family:var(--mono);font-size:.67rem;letter-spacing:.08em;text-transform:uppercase;color:#c8bda8}
+.identity-chip strong{font-size:.92rem;font-weight:800;color:#fff;display:inline-flex;align-items:center;gap:8px}
+.identity-chip-primary{border-color:rgba(229,196,127,.36);background:linear-gradient(145deg,rgba(229,196,127,.13),rgba(12,13,16,.75))}
+.flag-emoji{font-style:normal;font-size:1.04em;line-height:1}
+.hero-prooflist{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0;max-width:860px}
+.hero-proof-pill{padding:11px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035);backdrop-filter:blur(12px);font-size:.86rem;line-height:1.2;color:#e6e0d6;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.hero-facts{grid-template-columns:repeat(4,1fr)!important;max-width:900px!important;margin-top:34px!important}
+.hero-facts strong{font-size:1.52rem!important;line-height:1.05}
+.hero-facts span{font-size:.68rem!important;letter-spacing:.12em!important}
+.visual{min-height:760px!important;justify-content:flex-end!important;padding-right:6px}
+.orbit{width:min(42vw,620px)!important;opacity:.94}
+#headStage.portrait,.portrait#headStage{width:min(100%,610px)!important;aspect-ratio:5/6!important;border-radius:34px!important;transform:translateY(4px)!important;border:1px solid rgba(229,196,127,.32)!important;box-shadow:0 32px 120px rgba(0,0,0,.42),0 0 0 1px rgba(255,255,255,.03) inset!important;overflow:visible!important;background:linear-gradient(180deg,#121418,#0a0b0d)!important}
+#headStage:after{content:"";position:absolute;inset:auto 7% -20px;height:74px;border-radius:50%;background:radial-gradient(circle,rgba(229,196,127,.28),rgba(229,196,127,0) 68%);filter:blur(26px);z-index:0}
+#headStage .head-motion-stack{inset:0!important;border-radius:30px!important;overflow:hidden!important;z-index:1}
+.portrait-nation-badge{position:absolute;left:18px;top:18px;z-index:7;display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:14px;background:rgba(10,11,13,.76);backdrop-filter:blur(16px);border:1px solid rgba(229,196,127,.28);box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.portrait-nation-badge span{font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;color:#cfb87f}
+.portrait-nation-badge strong{display:inline-flex;gap:7px;align-items:center;font-size:.93rem;color:#fff}
+.photolabel{left:20px!important;right:20px!important;bottom:20px!important;padding:16px 18px!important;border-radius:18px!important;align-items:center!important;background:linear-gradient(145deg,rgba(10,11,13,.84),rgba(22,22,25,.72))!important;border-color:rgba(255,255,255,.12)!important}
+.photolabel strong{font-size:1.16rem!important;font-family:var(--sans)!important;font-weight:800!important;letter-spacing:-.02em!important}
+.photolabel span{font-size:.69rem!important;color:#ded2bb!important;letter-spacing:.16em!important;margin-top:6px!important}
+.portrait-nation-line{display:flex;align-items:center;gap:8px;margin-top:10px;color:#cdbf9c;font-size:.76rem;font-weight:700;line-height:1.2}
+.portrait-nation-line span{margin:0!important;font-size:.64rem!important;color:#bdaa81!important;letter-spacing:.12em!important}
+.portrait-nation-line b{font-size:.86rem;color:#fff}
+.motion-badge{right:-6px!important;top:12%!important;font-size:.72rem!important;padding:13px 16px!important;border-radius:16px!important}
+#roleLead{max-width:790px!important;font-size:1.24rem!important;line-height:1.66!important;color:#dfd7ca!important}
+@media(max-width:1120px){.hero-facts{grid-template-columns:repeat(2,1fr)!important}.visual{min-height:700px!important;justify-content:center!important;padding-right:0}.portrait#headStage{width:min(100%,560px)!important}}
+@media(max-width:760px){.identity-row{margin:14px 0 2px}.identity-chip{width:100%;justify-content:space-between;border-radius:18px}.hero-prooflist{display:grid;grid-template-columns:1fr;max-width:100%}.hero-proof-pill{font-size:.9rem;padding:12px 14px}.hero-facts{grid-template-columns:1fr!important}.visual{min-height:auto!important;padding:18px 0 8px!important}.portrait#headStage{width:min(100%,92vw)!important;border-radius:24px!important}.portrait-nation-badge{left:14px;top:14px;padding:9px 12px}.photolabel{left:14px!important;right:14px!important;bottom:14px!important;padding:14px 15px!important}.motion-badge{margin-top:14px!important}}
+
 </style>
 <style id="cinematic-offer-style">
 /* =====================================================================
@@ -1474,6 +1606,39 @@ section{padding:108px 0!important}.head{gap:56px!important;margin-bottom:48px!im
 @media(pointer:coarse){.motion-badge{display:none}.portrait{animation:portraitIdleFloat 5.5s ease-in-out infinite alternate}}@keyframes portraitIdleFloat{to{transform:translate3d(0,-8px,0) rotateZ(.2deg)!important}}
 @media(prefers-reduced-motion:reduce){.motion-badge i,.visual:before,.portrait{animation:none!important}.head-controlled{display:none!important}}
 @media print{.motion-badge,.impact-business-case{display:none!important}}
+
+/* === Offer polish update: identity, readability, volume === */
+.hero-name{max-width:740px}
+.identity-row{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 6px}
+.identity-chip{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid rgba(229,196,127,.22);background:rgba(12,13,16,.68);backdrop-filter:blur(14px);border-radius:999px;box-shadow:0 10px 35px rgba(0,0,0,.18);font-size:.78rem;line-height:1.15;color:#ece5d6}
+.identity-chip span{font-family:var(--mono);font-size:.67rem;letter-spacing:.08em;text-transform:uppercase;color:#c8bda8}
+.identity-chip strong{font-size:.92rem;font-weight:800;color:#fff;display:inline-flex;align-items:center;gap:8px}
+.identity-chip-primary{border-color:rgba(229,196,127,.36);background:linear-gradient(145deg,rgba(229,196,127,.13),rgba(12,13,16,.75))}
+.flag-emoji{font-style:normal;font-size:1.04em;line-height:1}
+.hero-prooflist{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0;max-width:860px}
+.hero-proof-pill{padding:11px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035);backdrop-filter:blur(12px);font-size:.86rem;line-height:1.2;color:#e6e0d6;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.hero-facts{grid-template-columns:repeat(4,1fr)!important;max-width:900px!important;margin-top:34px!important}
+.hero-facts strong{font-size:1.52rem!important;line-height:1.05}
+.hero-facts span{font-size:.68rem!important;letter-spacing:.12em!important}
+.visual{min-height:760px!important;justify-content:flex-end!important;padding-right:6px}
+.orbit{width:min(42vw,620px)!important;opacity:.94}
+#headStage.portrait,.portrait#headStage{width:min(100%,610px)!important;aspect-ratio:5/6!important;border-radius:34px!important;transform:translateY(4px)!important;border:1px solid rgba(229,196,127,.32)!important;box-shadow:0 32px 120px rgba(0,0,0,.42),0 0 0 1px rgba(255,255,255,.03) inset!important;overflow:visible!important;background:linear-gradient(180deg,#121418,#0a0b0d)!important}
+#headStage:after{content:"";position:absolute;inset:auto 7% -20px;height:74px;border-radius:50%;background:radial-gradient(circle,rgba(229,196,127,.28),rgba(229,196,127,0) 68%);filter:blur(26px);z-index:0}
+#headStage .head-motion-stack{inset:0!important;border-radius:30px!important;overflow:hidden!important;z-index:1}
+.portrait-nation-badge{position:absolute;left:18px;top:18px;z-index:7;display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:14px;background:rgba(10,11,13,.76);backdrop-filter:blur(16px);border:1px solid rgba(229,196,127,.28);box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.portrait-nation-badge span{font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;color:#cfb87f}
+.portrait-nation-badge strong{display:inline-flex;gap:7px;align-items:center;font-size:.93rem;color:#fff}
+.photolabel{left:20px!important;right:20px!important;bottom:20px!important;padding:16px 18px!important;border-radius:18px!important;align-items:center!important;background:linear-gradient(145deg,rgba(10,11,13,.84),rgba(22,22,25,.72))!important;border-color:rgba(255,255,255,.12)!important}
+.photolabel strong{font-size:1.16rem!important;font-family:var(--sans)!important;font-weight:800!important;letter-spacing:-.02em!important}
+.photolabel span{font-size:.69rem!important;color:#ded2bb!important;letter-spacing:.16em!important;margin-top:6px!important}
+.portrait-nation-line{display:flex;align-items:center;gap:8px;margin-top:10px;color:#cdbf9c;font-size:.76rem;font-weight:700;line-height:1.2}
+.portrait-nation-line span{margin:0!important;font-size:.64rem!important;color:#bdaa81!important;letter-spacing:.12em!important}
+.portrait-nation-line b{font-size:.86rem;color:#fff}
+.motion-badge{right:-6px!important;top:12%!important;font-size:.72rem!important;padding:13px 16px!important;border-radius:16px!important}
+#roleLead{max-width:790px!important;font-size:1.24rem!important;line-height:1.66!important;color:#dfd7ca!important}
+@media(max-width:1120px){.hero-facts{grid-template-columns:repeat(2,1fr)!important}.visual{min-height:700px!important;justify-content:center!important;padding-right:0}.portrait#headStage{width:min(100%,560px)!important}}
+@media(max-width:760px){.identity-row{margin:14px 0 2px}.identity-chip{width:100%;justify-content:space-between;border-radius:18px}.hero-prooflist{display:grid;grid-template-columns:1fr;max-width:100%}.hero-proof-pill{font-size:.9rem;padding:12px 14px}.hero-facts{grid-template-columns:1fr!important}.visual{min-height:auto!important;padding:18px 0 8px!important}.portrait#headStage{width:min(100%,92vw)!important;border-radius:24px!important}.portrait-nation-badge{left:14px;top:14px;padding:9px 12px}.photolabel{left:14px!important;right:14px!important;bottom:14px!important;padding:14px 15px!important}.motion-badge{margin-top:14px!important}}
+
 </style></head>
 <body class="recruiter-first">
 <a class="skip" data-i18n="skip" href="#content">Перейти к содержанию</a><div class="grain"></div><div class="ambient"></div><div class="cursor" id="cursor"></div><div class="progress"><span id="scrollProgress"></span></div>
@@ -1499,7 +1664,40 @@ section{padding:108px 0!important}.head{gap:56px!important;margin-bottom:48px!im
   window.addEventListener("unhandledrejection", finishLoading, { once: true });
 })();
 </script>
-<noscript><style>#preloader{display:none!important}body{overflow:auto!important}.reveal{opacity:1!important;transform:none!important}</style></noscript>
+<noscript><style>#preloader{display:none!important}body{overflow:auto!important}.reveal{opacity:1!important;transform:none!important}
+/* === Offer polish update: identity, readability, volume === */
+.hero-name{max-width:740px}
+.identity-row{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 6px}
+.identity-chip{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid rgba(229,196,127,.22);background:rgba(12,13,16,.68);backdrop-filter:blur(14px);border-radius:999px;box-shadow:0 10px 35px rgba(0,0,0,.18);font-size:.78rem;line-height:1.15;color:#ece5d6}
+.identity-chip span{font-family:var(--mono);font-size:.67rem;letter-spacing:.08em;text-transform:uppercase;color:#c8bda8}
+.identity-chip strong{font-size:.92rem;font-weight:800;color:#fff;display:inline-flex;align-items:center;gap:8px}
+.identity-chip-primary{border-color:rgba(229,196,127,.36);background:linear-gradient(145deg,rgba(229,196,127,.13),rgba(12,13,16,.75))}
+.flag-emoji{font-style:normal;font-size:1.04em;line-height:1}
+.hero-prooflist{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0;max-width:860px}
+.hero-proof-pill{padding:11px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035);backdrop-filter:blur(12px);font-size:.86rem;line-height:1.2;color:#e6e0d6;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.hero-facts{grid-template-columns:repeat(4,1fr)!important;max-width:900px!important;margin-top:34px!important}
+.hero-facts strong{font-size:1.52rem!important;line-height:1.05}
+.hero-facts span{font-size:.68rem!important;letter-spacing:.12em!important}
+.visual{min-height:760px!important;justify-content:flex-end!important;padding-right:6px}
+.orbit{width:min(42vw,620px)!important;opacity:.94}
+#headStage.portrait,.portrait#headStage{width:min(100%,610px)!important;aspect-ratio:5/6!important;border-radius:34px!important;transform:translateY(4px)!important;border:1px solid rgba(229,196,127,.32)!important;box-shadow:0 32px 120px rgba(0,0,0,.42),0 0 0 1px rgba(255,255,255,.03) inset!important;overflow:visible!important;background:linear-gradient(180deg,#121418,#0a0b0d)!important}
+#headStage:after{content:"";position:absolute;inset:auto 7% -20px;height:74px;border-radius:50%;background:radial-gradient(circle,rgba(229,196,127,.28),rgba(229,196,127,0) 68%);filter:blur(26px);z-index:0}
+#headStage .head-motion-stack{inset:0!important;border-radius:30px!important;overflow:hidden!important;z-index:1}
+.portrait-nation-badge{position:absolute;left:18px;top:18px;z-index:7;display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:14px;background:rgba(10,11,13,.76);backdrop-filter:blur(16px);border:1px solid rgba(229,196,127,.28);box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.portrait-nation-badge span{font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;color:#cfb87f}
+.portrait-nation-badge strong{display:inline-flex;gap:7px;align-items:center;font-size:.93rem;color:#fff}
+.photolabel{left:20px!important;right:20px!important;bottom:20px!important;padding:16px 18px!important;border-radius:18px!important;align-items:center!important;background:linear-gradient(145deg,rgba(10,11,13,.84),rgba(22,22,25,.72))!important;border-color:rgba(255,255,255,.12)!important}
+.photolabel strong{font-size:1.16rem!important;font-family:var(--sans)!important;font-weight:800!important;letter-spacing:-.02em!important}
+.photolabel span{font-size:.69rem!important;color:#ded2bb!important;letter-spacing:.16em!important;margin-top:6px!important}
+.portrait-nation-line{display:flex;align-items:center;gap:8px;margin-top:10px;color:#cdbf9c;font-size:.76rem;font-weight:700;line-height:1.2}
+.portrait-nation-line span{margin:0!important;font-size:.64rem!important;color:#bdaa81!important;letter-spacing:.12em!important}
+.portrait-nation-line b{font-size:.86rem;color:#fff}
+.motion-badge{right:-6px!important;top:12%!important;font-size:.72rem!important;padding:13px 16px!important;border-radius:16px!important}
+#roleLead{max-width:790px!important;font-size:1.24rem!important;line-height:1.66!important;color:#dfd7ca!important}
+@media(max-width:1120px){.hero-facts{grid-template-columns:repeat(2,1fr)!important}.visual{min-height:700px!important;justify-content:center!important;padding-right:0}.portrait#headStage{width:min(100%,560px)!important}}
+@media(max-width:760px){.identity-row{margin:14px 0 2px}.identity-chip{width:100%;justify-content:space-between;border-radius:18px}.hero-prooflist{display:grid;grid-template-columns:1fr;max-width:100%}.hero-proof-pill{font-size:.9rem;padding:12px 14px}.hero-facts{grid-template-columns:1fr!important}.visual{min-height:auto!important;padding:18px 0 8px!important}.portrait#headStage{width:min(100%,92vw)!important;border-radius:24px!important}.portrait-nation-badge{left:14px;top:14px;padding:9px 12px}.photolabel{left:14px!important;right:14px!important;bottom:14px!important;padding:14px 15px!important}.motion-badge{margin-top:14px!important}}
+
+</style></noscript>
 <header id="header"><nav class="nav"><a class="brand" href="#top"><span class="brandmark"><i></i><b>PM</b></span><span>PAVEL MARKOV<small>PROJECT MANAGER • OPERATIONS</small></span></a><div class="links"><a class="copy-swap" data-copy-en="Value" data-copy-ru="Ценность" href="#offer">Ценность</a><a class="copy-swap" data-copy-en="Impact" data-copy-ru="Эффект" href="#impact-calculator">Эффект</a><a class="copy-swap" data-copy-en="Experience" data-copy-ru="Опыт" href="#experience">Опыт</a><a class="copy-swap" data-copy-en="Proof" data-copy-ru="Кейсы" href="#projects">Кейсы</a><a class="copy-swap" data-copy-en="Skills" data-copy-ru="Навыки" href="#skills">Навыки</a><a class="copy-swap" data-copy-en="Contact" data-copy-ru="Контакт" href="#contact">Контакт</a></div><div class="controls"><div class="langs"><button aria-label="Русский язык" class="active" data-lang="ru" title="Русский" type="button"><svg aria-hidden="true" class="lang-flag" focusable="false" viewbox="0 0 60 36">
 <rect fill="#ffffff" height="12" width="60" y="0"></rect>
 <rect fill="#1c57a7" height="12" width="60" y="12"></rect>
@@ -1635,16 +1833,7 @@ section{padding:108px 0!important}.head{gap:56px!important;margin-bottom:48px!im
 </div>
 </aside>
 <main id="content">
-<section class="hero" id="top"><div class="container herogrid"><div class="reveal"><div class="available"><i></i><span class="copy-swap" data-copy-en="Open to Project Management / Operations opportunities" data-copy-ru="Открыт к предложениям в Project Management / Operations">Открыт к предложениям в Project Management / Operations</span></div><h1 class="hero-name"><span data-i18n="firstName">Павел</span><span data-i18n="lastName">Марков</span></h1><div class="eyebrow" id="roleEyebrow">PROJECT MANAGER • DIGITAL / IT • OPERATIONS</div><p class="lead copy-swap" data-copy-en="I turn ambiguity into controlled delivery: clear requirements, priorities, ownership, timelines, risks and an understandable status for leadership." data-copy-ru="Превращаю неопределённость в управляемый delivery: требования, приоритеты, ответственность, сроки, риски и понятный статус для руководителя." id="roleLead">Превращаю неопределённость в управляемый delivery: требования, приоритеты, ответственность, сроки, риски и понятный статус для руководителя.</p><div class="actions">
-<a class="primary action-with-icon" href="#contact"><svg aria-hidden="true" class="ui-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H6l-4 2 1.5-4A8.8 8.8 0 0 1 3 12a9 9 0 0 1 18 0Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg><span data-i18n="invite">Обсудить роль</span><b>↗</b></a>
-<a class="secondary action-with-icon" href="#impact-calculator"><svg aria-hidden="true" class="ui-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19V2"></path><path d="M2 19h22"></path></svg><span class="copy-swap" data-copy-en="Calculate impact" data-copy-ru="Рассчитать эффект">Рассчитать эффект</span><b>↘</b></a>
-</div><div class="hero-utility"><button id="printBtn" type="button"><span class="copy-swap" data-copy-en="Open recruiter PDF version" data-copy-ru="Открыть PDF-версию для HR">Открыть PDF-версию для HR</span><b>↓</b></button></div><div class="facts"><div><strong>Project + Operations</strong><span class="copy-swap" data-copy-en="target role" data-copy-ru="целевая роль">целевая роль</span></div><div><strong>Digital / IT</strong><span class="copy-swap" data-copy-en="preferred environment" data-copy-ru="приоритетная среда">приоритетная среда</span></div><div><strong>Brief → Result</strong><span class="copy-swap" data-copy-en="ownership principle" data-copy-ru="принцип ответственности">принцип ответственности</span></div></div></div><div class="visual reveal"><div class="orbit"></div><div class="glow"></div><figure class="portrait" data-ready="true" id="headStage"><div aria-label="Павел Марков — интерактивный портрет" class="head-motion-stack">
-<video autoplay="" class="head-layer head-idle" id="headIdle" loop="" muted="" playsinline="" poster="hero-head-cinematic-poster.jpg" preload="auto"><source src="head-idle.mp4" type="video/mp4"/></video>
-<video class="head-layer head-controlled" id="headLeft" muted="" playsinline="" preload="auto"><source src="head-left.mp4" type="video/mp4"/></video>
-<video class="head-layer head-controlled" id="headRight" muted="" playsinline="" preload="auto"><source src="head-right.mp4" type="video/mp4"/></video>
-<video class="head-layer head-controlled" id="headDown" muted="" playsinline="" preload="auto"><source src="head-down.mp4" type="video/mp4"/></video>
-<div aria-hidden="true" class="head-light"></div>
-</div><figcaption class="photolabel"><div><strong class="copy-swap" data-copy-en="Pavel Markov" data-copy-ru="Павел Марков">Павел Марков</strong><span class="copy-swap" data-copy-en="PROJECT MANAGER • OPERATIONS" data-copy-ru="PROJECT MANAGER • OPERATIONS">PROJECT MANAGER • OPERATIONS</span></div><b>PM</b></figcaption></figure><div aria-hidden="true" class="motion-badge"><i></i><span class="copy-swap" data-copy-en="Move the cursor — the portrait responds" data-copy-ru="Проведите курсором — портрет реагирует">Проведите курсором — портрет реагирует</span></div></div></div><div class="scrollcue"><i></i><span data-i18n="scroll">Смотреть опыт</span></div></section>
+<section class="hero" id="top"><div class="container herogrid"><div class="reveal"><div class="available"><i></i><span class="copy-swap" data-copy-en="Open to Project Management / Operations opportunities" data-copy-ru="Открыт к предложениям в Project Management / Operations">Открыт к предложениям в Project Management / Operations</span></div><h1 class="hero-name"><span data-i18n="firstName">Павел</span><span data-i18n="lastName">Марков</span></h1><div class="eyebrow" id="roleEyebrow">PROJECT MANAGER • DIGITAL / IT • OPERATIONS</div><div class="identity-row reveal-inline"><div class="identity-chip identity-chip-primary"><span class="copy-swap" data-copy-en="Nation" data-copy-ru="Nation">Nation</span><strong><span class="copy-swap" data-copy-en="Belarus" data-copy-ru="Belarus">Belarus</span> <em class="flag-emoji" aria-hidden="true">🇧🇾</em></strong></div><div class="identity-chip"><span class="copy-swap" data-copy-en="Citizenship" data-copy-ru="Гражданство">Гражданство</span><strong class="copy-swap" data-copy-en="Republic of Belarus" data-copy-ru="Республика Беларусь">Республика Беларусь</strong></div></div><p class="lead copy-swap" data-copy-en="I turn ambiguity into controlled delivery: clear requirements, priorities, ownership, timelines, risks and an understandable status for leadership." data-copy-ru="Превращаю неопределённость в управляемый delivery: требования, приоритеты, ответственность, сроки, риски и понятный статус для руководителя." id="roleLead">Превращаю неопределённость в управляемый delivery: требования, приоритеты, ответственность, сроки, риски и понятный статус для руководителя.</p><div class="hero-prooflist"><div class="hero-proof-pill copy-swap" data-copy-en="Requirements → priorities → owners" data-copy-ru="Требования → приоритеты → ответственные">Требования → приоритеты → ответственные</div><div class="hero-proof-pill copy-swap" data-copy-en="Status → communication → alignment" data-copy-ru="Статус → коммуникация → синхронизация">Статус → коммуникация → синхронизация</div><div class="hero-proof-pill copy-swap" data-copy-en="Risks → tempo → delivery" data-copy-ru="Риски → темп → delivery">Риски → темп → delivery</div></div><div class="actions"><a class="primary action-with-icon" href="#contact"><svg aria-hidden="true" class="ui-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H6l-4 2 1.5-4A8.8 8.8 0 0 1 3 12a9 9 0 0 1 18 0Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg><span data-i18n="invite">Обсудить роль</span><b>↗</b></a><a class="secondary action-with-icon" href="#impact-calculator"><svg aria-hidden="true" class="ui-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19V2"></path><path d="M2 19h22"></path></svg><span class="copy-swap" data-copy-en="Calculate impact" data-copy-ru="Рассчитать эффект">Рассчитать эффект</span><b>↘</b></a></div><div class="hero-utility"><button id="printBtn" type="button"><span class="copy-swap" data-copy-en="Open recruiter PDF version" data-copy-ru="Открыть PDF-версию для HR">Открыть PDF-версию для HR</span><b>↓</b></button></div><div class="facts hero-facts"><div><strong>Project + Operations</strong><span class="copy-swap" data-copy-en="target role" data-copy-ru="целевая роль">целевая роль</span></div><div><strong>Digital / IT</strong><span class="copy-swap" data-copy-en="preferred environment" data-copy-ru="приоритетная среда">приоритетная среда</span></div><div><strong>Brief → Result</strong><span class="copy-swap" data-copy-en="ownership principle" data-copy-ru="принцип ответственности">принцип ответственности</span></div><div><strong>Nation: Belarus 🇧🇾</strong><span class="copy-swap" data-copy-en="citizenship" data-copy-ru="гражданство">гражданство</span></div></div></div><div class="visual reveal"><div class="orbit"></div><div class="glow"></div><figure class="portrait" data-ready="true" id="headStage"><div class="portrait-nation-badge"><span class="copy-swap" data-copy-en="Nation" data-copy-ru="Nation">Nation</span><strong><span class="copy-swap" data-copy-en="Belarus" data-copy-ru="Belarus">Belarus</span> <em class="flag-emoji" aria-hidden="true">🇧🇾</em></strong></div><div aria-label="Павел Марков — интерактивный портрет" class="head-motion-stack"><video autoplay="" class="head-layer head-idle" id="headIdle" loop="" muted="" playsinline="" poster="hero-head-cinematic-poster.jpg" preload="auto"><source src="head-idle.mp4" type="video/mp4"/></video><video class="head-layer head-controlled" id="headLeft" muted="" playsinline="" preload="auto"><source src="head-left.mp4" type="video/mp4"/></video><video class="head-layer head-controlled" id="headRight" muted="" playsinline="" preload="auto"><source src="head-right.mp4" type="video/mp4"/></video><video class="head-layer head-controlled" id="headDown" muted="" playsinline="" preload="auto"><source src="head-down.mp4" type="video/mp4"/></video><div aria-hidden="true" class="head-light"></div></div><figcaption class="photolabel"><div><strong class="copy-swap" data-copy-en="Pavel Markov" data-copy-ru="Павел Марков">Павел Марков</strong><span class="copy-swap" data-copy-en="PROJECT MANAGER • OPERATIONS" data-copy-ru="PROJECT MANAGER • OPERATIONS">PROJECT MANAGER • OPERATIONS</span><small class="portrait-nation-line"><span class="copy-swap" data-copy-en="Nation" data-copy-ru="Nation">Nation</span><b class="copy-swap" data-copy-en="Belarus" data-copy-ru="Belarus">Belarus</b><em class="flag-emoji" aria-hidden="true">🇧🇾</em></small></div><b>PM</b></figcaption></figure><div aria-hidden="true" class="motion-badge"><i></i><span class="copy-swap" data-copy-en="Move the cursor — the portrait responds" data-copy-ru="Проведите курсором — портрет реагирует">Проведите курсором — портрет реагирует</span></div></div></div><div class="scrollcue"><i></i><span data-i18n="scroll">Смотреть опыт</span></div></section>
 <section class="offer-brief" id="offer">
 <div class="container">
 <div class="offer-top reveal">
@@ -1683,9 +1872,9 @@ section{padding:108px 0!important}.head{gap:56px!important;margin-bottom:48px!im
 <div class="impact-head reveal">
 <div>
 <div class="eyebrow copy-swap" data-copy-en="Interactive business case" data-copy-ru="Интерактивный business case">Интерактивный business case</div>
-<h2 class="impact-title copy-swap" data-copy-en="Calculate the leverage&lt;br&gt;of better management." data-copy-ru="Рассчитайте эффект&lt;br&gt;сильного управления.">Рассчитайте эффект<br/>сильного управления.</h2>
+<h2 class="impact-title copy-swap" data-copy-en="Estimate the business value&lt;br&gt;of hiring me." data-copy-ru="Оцените бизнес-эффект&lt;br&gt;от моего найма.">Оцените бизнес-эффект<br/>от моего найма.</h2>
 </div>
-<p class="impact-intro copy-swap" data-copy-en="Model two measurable streams: capacity returned to the team and delivery risk reduced. Adjust the assumptions to your context and get a concise hiring business case." data-copy-ru="Модель считает два измеримых потока: возвращённую ёмкость команды и снижение стоимости задержек. Настройте вводные под свою компанию и получите краткий business case найма.">Модель считает два измеримых потока: возвращённую ёмкость команды и снижение стоимости задержек. Настройте вводные под свою компанию и получите краткий business case найма.</p>
+<p class="impact-intro copy-swap" data-copy-en="Use your team assumptions to estimate returned capacity, lower delivery friction and the potential annual business value of bringing me into the role." data-copy-ru="Подставьте вводные вашей команды и оцените возвращённую ёмкость, снижение организационных потерь и потенциальный годовой бизнес-эффект от моего найма.">Подставьте вводные вашей команды и оцените возвращённую ёмкость, снижение организационных потерь и потенциальный годовой бизнес-эффект от моего найма.</p>
 </div>
 <div class="impact-shell reveal">
 <div class="impact-controls">
@@ -1734,7 +1923,7 @@ section{padding:108px 0!important}.head{gap:56px!important;margin-bottom:48px!im
 </div>
 <div aria-live="polite" class="impact-results">
 <div class="impact-result-head">
-<span class="impact-step-label copy-swap" data-copy-en="02 / Potential annual leverage" data-copy-ru="02 / Потенциальный годовой эффект">02 / Потенциальный годовой эффект</span>
+<span class="impact-step-label copy-swap" data-copy-en="02 / Potential annual business effect" data-copy-ru="02 / Потенциальный годовой бизнес-эффект">02 / Потенциальный годовой бизнес-эффект</span>
 <button class="impact-copy" id="impactCopy" type="button"><span class="copy-swap" data-copy-en="Copy business case" data-copy-ru="Скопировать business case">Скопировать business case</span><b>⧉</b></button>
 </div>
 <div class="impact-total-card">
@@ -2110,4 +2299,37 @@ html body.recruiter-first .motion-badge{top:4%!important;right:3%!important}
 
 html body.recruiter-first .hero h1.hero-name>span:last-child{margin-left:.08em!important}
 html body.recruiter-first .hero h1.hero-name>span:last-child:after{display:none!important;content:none!important}
+
+/* === Offer polish update: identity, readability, volume === */
+.hero-name{max-width:740px}
+.identity-row{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 6px}
+.identity-chip{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid rgba(229,196,127,.22);background:rgba(12,13,16,.68);backdrop-filter:blur(14px);border-radius:999px;box-shadow:0 10px 35px rgba(0,0,0,.18);font-size:.78rem;line-height:1.15;color:#ece5d6}
+.identity-chip span{font-family:var(--mono);font-size:.67rem;letter-spacing:.08em;text-transform:uppercase;color:#c8bda8}
+.identity-chip strong{font-size:.92rem;font-weight:800;color:#fff;display:inline-flex;align-items:center;gap:8px}
+.identity-chip-primary{border-color:rgba(229,196,127,.36);background:linear-gradient(145deg,rgba(229,196,127,.13),rgba(12,13,16,.75))}
+.flag-emoji{font-style:normal;font-size:1.04em;line-height:1}
+.hero-prooflist{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0;max-width:860px}
+.hero-proof-pill{padding:11px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035);backdrop-filter:blur(12px);font-size:.86rem;line-height:1.2;color:#e6e0d6;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.hero-facts{grid-template-columns:repeat(4,1fr)!important;max-width:900px!important;margin-top:34px!important}
+.hero-facts strong{font-size:1.52rem!important;line-height:1.05}
+.hero-facts span{font-size:.68rem!important;letter-spacing:.12em!important}
+.visual{min-height:760px!important;justify-content:flex-end!important;padding-right:6px}
+.orbit{width:min(42vw,620px)!important;opacity:.94}
+#headStage.portrait,.portrait#headStage{width:min(100%,610px)!important;aspect-ratio:5/6!important;border-radius:34px!important;transform:translateY(4px)!important;border:1px solid rgba(229,196,127,.32)!important;box-shadow:0 32px 120px rgba(0,0,0,.42),0 0 0 1px rgba(255,255,255,.03) inset!important;overflow:visible!important;background:linear-gradient(180deg,#121418,#0a0b0d)!important}
+#headStage:after{content:"";position:absolute;inset:auto 7% -20px;height:74px;border-radius:50%;background:radial-gradient(circle,rgba(229,196,127,.28),rgba(229,196,127,0) 68%);filter:blur(26px);z-index:0}
+#headStage .head-motion-stack{inset:0!important;border-radius:30px!important;overflow:hidden!important;z-index:1}
+.portrait-nation-badge{position:absolute;left:18px;top:18px;z-index:7;display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:14px;background:rgba(10,11,13,.76);backdrop-filter:blur(16px);border:1px solid rgba(229,196,127,.28);box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.portrait-nation-badge span{font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;color:#cfb87f}
+.portrait-nation-badge strong{display:inline-flex;gap:7px;align-items:center;font-size:.93rem;color:#fff}
+.photolabel{left:20px!important;right:20px!important;bottom:20px!important;padding:16px 18px!important;border-radius:18px!important;align-items:center!important;background:linear-gradient(145deg,rgba(10,11,13,.84),rgba(22,22,25,.72))!important;border-color:rgba(255,255,255,.12)!important}
+.photolabel strong{font-size:1.16rem!important;font-family:var(--sans)!important;font-weight:800!important;letter-spacing:-.02em!important}
+.photolabel span{font-size:.69rem!important;color:#ded2bb!important;letter-spacing:.16em!important;margin-top:6px!important}
+.portrait-nation-line{display:flex;align-items:center;gap:8px;margin-top:10px;color:#cdbf9c;font-size:.76rem;font-weight:700;line-height:1.2}
+.portrait-nation-line span{margin:0!important;font-size:.64rem!important;color:#bdaa81!important;letter-spacing:.12em!important}
+.portrait-nation-line b{font-size:.86rem;color:#fff}
+.motion-badge{right:-6px!important;top:12%!important;font-size:.72rem!important;padding:13px 16px!important;border-radius:16px!important}
+#roleLead{max-width:790px!important;font-size:1.24rem!important;line-height:1.66!important;color:#dfd7ca!important}
+@media(max-width:1120px){.hero-facts{grid-template-columns:repeat(2,1fr)!important}.visual{min-height:700px!important;justify-content:center!important;padding-right:0}.portrait#headStage{width:min(100%,560px)!important}}
+@media(max-width:760px){.identity-row{margin:14px 0 2px}.identity-chip{width:100%;justify-content:space-between;border-radius:18px}.hero-prooflist{display:grid;grid-template-columns:1fr;max-width:100%}.hero-proof-pill{font-size:.9rem;padding:12px 14px}.hero-facts{grid-template-columns:1fr!important}.visual{min-height:auto!important;padding:18px 0 8px!important}.portrait#headStage{width:min(100%,92vw)!important;border-radius:24px!important}.portrait-nation-badge{left:14px;top:14px;padding:9px 12px}.photolabel{left:14px!important;right:14px!important;bottom:14px!important;padding:14px 15px!important}.motion-badge{margin-top:14px!important}}
+
 </style></body></html>
