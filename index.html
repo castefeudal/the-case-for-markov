@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
 <meta charset="utf-8"/>
@@ -6,7 +7,7 @@
 <meta content="#080808" id="themeColor" name="theme-color"/>
 <meta content="dark light" name="color-scheme"/>
 <meta content="Павел Марков" name="author"/>
-<meta content="OFFER-MAX-IMPACT-2026.07" name="build-version"/>
+<meta content="OFFER-CINEMATIC-IMPACT-2026.07" name="build-version"/>
 <meta content="Павел Марков — Project Manager и Operations Manager. Требования, delivery, коммуникация, риски и ответственность за результат." name="description"/>
 <meta content="profile" property="og:type"/>
 <meta content="Павел Марков — Project Manager / Operations" property="og:title"/>
@@ -1420,7 +1421,60 @@ section{padding:108px 0!important}.head{gap:56px!important;margin-bottom:48px!im
 @media(max-width:430px){.hero-name{font-size:clamp(3.25rem,16vw,4.65rem)!important}.impact-cost-row{grid-template-columns:1fr}.impact-metrics{grid-template-columns:1fr}.impact-ring strong{font-size:2.25rem}}
 @media print{.impact-calculator{display:none!important}.hero-utility{display:none!important}}
 </style>
-</head>
+<style id="cinematic-offer-style">
+/* =====================================================================
+   CINEMATIC OFFER EDITION — continuous portrait + executive business case
+   ===================================================================== */
+:root{--cinema-gold:#e5c47f;--cinema-ink:#08090b}
+.fit-lab,.fit-header-btn{display:none!important}
+.visual{isolation:isolate;perspective:1500px}
+.visual:before{animation:cinemaAura 7s ease-in-out infinite alternate}
+@keyframes cinemaAura{to{transform:translate3d(14px,-9px,0) scale(1.035);opacity:.82}}
+.portrait{transform-style:preserve-3d!important;will-change:transform;transition:box-shadow .45s ease,border-color .45s ease!important}
+.portrait:hover{border-color:rgba(229,196,127,.72)!important;box-shadow:0 78px 190px rgba(0,0,0,.72),0 0 0 12px rgba(255,255,255,.022),0 0 90px rgba(211,177,114,.11)!important}
+.head-motion-stack{position:absolute;inset:0;overflow:hidden;background:#090a0c url('hero-head-cinematic-poster.jpg') center/cover no-repeat}
+.head-layer{position:absolute!important;inset:0;width:100%!important;height:100%!important;min-height:0!important;object-fit:cover!important;object-position:center!important;transform:scale(1.015)!important;filter:brightness(.86) saturate(.84) contrast(1.035)!important;pointer-events:none;will-change:opacity;backface-visibility:hidden}
+.head-idle{opacity:var(--idle-opacity,1)}
+.head-controlled{opacity:0}
+#headLeft{opacity:var(--left-opacity,0)}#headRight{opacity:var(--right-opacity,0)}#headDown{opacity:var(--down-opacity,0)}
+.head-light{position:absolute;inset:-20%;z-index:3;pointer-events:none;background:radial-gradient(circle at var(--shine-x,50%) var(--shine-y,30%),rgba(255,236,191,.16),transparent 22%),linear-gradient(115deg,transparent 38%,rgba(255,255,255,.055) 50%,transparent 62%);mix-blend-mode:screen;opacity:.72;transform:translateZ(22px)}
+.portrait:before{z-index:4!important}.photolabel{z-index:6!important}
+.motion-badge{position:absolute;right:-12px;top:14%;z-index:8;display:flex;align-items:center;gap:10px;padding:11px 14px;border:1px solid rgba(229,196,127,.28);background:rgba(8,9,11,.76);backdrop-filter:blur(16px);box-shadow:0 18px 60px rgba(0,0,0,.28);font-size:.68rem;font-weight:700;color:#d7d1c7;white-space:nowrap}
+.motion-badge i{width:8px;height:8px;border-radius:50%;background:var(--cinema-gold);box-shadow:0 0 0 6px rgba(229,196,127,.1);animation:motionPulse 1.8s ease-in-out infinite}
+@keyframes motionPulse{50%{box-shadow:0 0 0 11px rgba(229,196,127,0)}}
+
+.impact-business-case{padding-top:145px!important;overflow:hidden;background:radial-gradient(circle at 80% 20%,rgba(229,196,127,.12),transparent 30rem),linear-gradient(180deg,rgba(255,255,255,.016),transparent 70%)}
+.impact-business-case:after{content:"IMPACT";position:absolute;right:-.06em;top:140px;font:800 clamp(8rem,23vw,23rem)/.75 var(--sans);letter-spacing:-.08em;color:rgba(229,196,127,.025);pointer-events:none}
+.impact-business-case .container{position:relative;z-index:1}
+.impact-control-top,.impact-result-head{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:28px}
+.impact-step-label{font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--cinema-gold)}
+.impact-business-case .impact-shell{grid-template-columns:minmax(400px,.82fr) minmax(0,1.18fr);border-radius:34px;border-color:rgba(229,196,127,.22);box-shadow:0 55px 170px rgba(0,0,0,.46),inset 0 1px 0 rgba(255,255,255,.04)}
+.impact-business-case .impact-controls{background:linear-gradient(180deg,rgba(15,16,19,.98),rgba(9,10,12,.98));padding:38px}
+.impact-business-case .impact-results{background:radial-gradient(circle at 86% 0,rgba(229,196,127,.13),transparent 25rem),linear-gradient(145deg,rgba(26,23,17,.98),rgba(10,11,13,.98));padding:38px}
+.impact-business-case .impact-presets{margin:0;min-width:310px}
+.impact-field-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.impact-field.compact{margin:18px 0 8px}.impact-field.compact label{max-width:220px}
+.impact-finance{margin-top:26px;padding-top:0;border-top:1px solid rgba(255,255,255,.11)}
+.impact-finance summary{padding:19px 0 4px;font-family:var(--sans);font-size:.88rem;letter-spacing:0;text-transform:none;color:#ddd7cd}
+.impact-cost-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:15px}.impact-cost-grid .impact-currency{grid-column:2}.impact-cost-input label,.impact-currency label{display:block;min-height:38px;color:#bdb7ad;font-size:.78rem;font-weight:700;line-height:1.35}
+.impact-cost-input input,.impact-currency select{width:100%;height:50px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.045);color:#f7f4ed;padding:0 14px;font:750 1rem var(--sans)}
+.impact-copy{display:inline-flex;align-items:center;gap:9px;min-height:42px;padding:0 14px;border:1px solid rgba(229,196,127,.28);border-radius:999px;background:rgba(229,196,127,.055);color:#e6dfd2;font:750 .72rem var(--sans);transition:.3s ease}.impact-copy:hover{border-color:var(--cinema-gold);color:var(--cinema-gold);transform:translateY(-2px)}
+.impact-total-card{display:grid;grid-template-columns:1fr 176px;gap:30px;align-items:center;padding:30px;border:1px solid rgba(229,196,127,.22);border-radius:24px;background:linear-gradient(135deg,rgba(229,196,127,.09),rgba(255,255,255,.025))}
+.impact-total-copy>span{display:block;color:#bcb5a9;font-size:.78rem;font-weight:700}.impact-total-copy>strong{display:block;margin-top:8px;font-size:clamp(2.55rem,4.6vw,5rem);line-height:.92;letter-spacing:-.065em;color:#fff}.impact-total-copy p{max-width:620px;margin:16px 0 0;color:#c3bdb3;font-size:.92rem;line-height:1.55}
+.impact-business-case .impact-ring{width:176px}.impact-business-case .impact-ring strong{font-size:2.35rem}
+.impact-waterfall{display:grid;gap:16px;margin-top:28px;padding:24px 0;border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1)}.impact-waterfall-row>div{display:flex;justify-content:space-between;gap:20px;align-items:center}.impact-waterfall-row span{font-size:.82rem;color:#c0baaf}.impact-waterfall-row strong{font-size:.88rem;color:#f3eee5}.impact-waterfall-row i{display:block;height:8px;margin-top:9px;border-radius:999px;background:rgba(255,255,255,.075);overflow:hidden}.impact-waterfall-row i b{display:block;height:100%;width:50%;border-radius:inherit;background:linear-gradient(90deg,#b48b47,var(--cinema-gold));transition:width .7s var(--ease)}.impact-waterfall-row:nth-child(2) i b{background:linear-gradient(90deg,#75644a,#c6a970)}
+.impact-metrics-plus{grid-template-columns:repeat(3,1fr);margin-top:22px}.impact-metrics-plus>div{min-height:108px}.impact-metrics-plus .impact-money{background:linear-gradient(135deg,rgba(229,196,127,.13),rgba(255,255,255,.02))}
+.impact-path{margin-top:25px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1)}.impact-path>span{font-size:.84rem;font-weight:800;color:#ddd6cb}.impact-path-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:15px}.impact-path-grid>div{padding:17px;border:1px solid rgba(255,255,255,.1);border-radius:16px;background:rgba(255,255,255,.018)}.impact-path-grid b{display:block;color:var(--cinema-gold);font-size:.68rem}.impact-path-grid strong{display:block;margin-top:10px;font-size:.95rem}.impact-path-grid p{margin:7px 0 0;color:#aaa49a;font-size:.77rem;line-height:1.45}
+.impact-formula{display:grid;grid-template-columns:180px 1fr;gap:28px;margin-top:20px;padding:21px 24px;border:1px solid rgba(229,196,127,.16);background:rgba(229,196,127,.035)}.impact-formula span{color:var(--cinema-gold);font-weight:800}.impact-formula p{margin:0;color:#aaa49b;font-size:.82rem;line-height:1.55}
+.impact-note{margin-top:14px!important}
+.impact-copy.copied{background:var(--cinema-gold);color:#15110b}
+
+@media(max-width:1120px){.motion-badge{right:8%;top:10%}.impact-business-case .impact-shell{grid-template-columns:1fr}.impact-control-top{align-items:flex-start}.impact-business-case .impact-presets{min-width:0}.impact-metrics-plus{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.motion-badge{position:relative;right:auto;top:auto;margin:12px auto 0;width:max-content;max-width:100%;white-space:normal}.portrait{aspect-ratio:5/6!important}.impact-business-case{padding-top:92px!important}.impact-control-top,.impact-result-head{display:grid}.impact-business-case .impact-controls,.impact-business-case .impact-results{padding:23px}.impact-field-grid,.impact-cost-grid{grid-template-columns:1fr}.impact-cost-grid .impact-currency{grid-column:auto}.impact-total-card{grid-template-columns:1fr}.impact-business-case .impact-ring{width:150px;margin:auto}.impact-total-copy>strong{font-size:clamp(2.4rem,12vw,3.8rem)}.impact-metrics-plus{grid-template-columns:1fr 1fr}.impact-path-grid{grid-template-columns:1fr}.impact-formula{grid-template-columns:1fr;gap:8px}}
+@media(max-width:460px){.impact-metrics-plus{grid-template-columns:1fr}.impact-business-case .impact-presets{grid-template-columns:1fr}.impact-total-card{padding:22px}.impact-copy{width:100%;justify-content:center}}
+@media(pointer:coarse){.motion-badge{display:none}.portrait{animation:portraitIdleFloat 5.5s ease-in-out infinite alternate}}@keyframes portraitIdleFloat{to{transform:translate3d(0,-8px,0) rotateZ(.2deg)!important}}
+@media(prefers-reduced-motion:reduce){.motion-badge i,.visual:before,.portrait{animation:none!important}.head-controlled{display:none!important}}
+@media print{.motion-badge,.impact-business-case{display:none!important}}
+</style></head>
 <body class="recruiter-first">
 <a class="skip" data-i18n="skip" href="#content">Перейти к содержанию</a><div class="grain"></div><div class="ambient"></div><div class="cursor" id="cursor"></div><div class="progress"><span id="scrollProgress"></span></div>
 <script>
@@ -1457,13 +1511,7 @@ section{padding:108px 0!important}.head{gap:56px!important;margin-bottom:48px!im
 <path d="M25 0h10v36H25zM0 13h60v10H0z" fill="#fff"></path>
 <path d="M27 0h6v36h-6zM0 15h60v6H0z" fill="#C8102E"></path>
 </svg><span class="lang-code">EN</span></button></div><button aria-label="Сменить тему" class="icon themebtn" id="themeBtn" title="Сменить тему" type="button"><svg aria-hidden="true" class="ui-icon theme-glyph" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5 9 9 0 1 0 20.5 14.2Z"></path></svg></button><button class="pill" id="hrBtn" type="button"><svg aria-hidden="true" class="ui-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><circle cx="9" cy="8" r="4"></circle><path d="M2.8 20c.8-4 2.9-6 6.2-6 2.1 0 3.7.7 4.8 2"></path><path d="m16 18 2 2 4-5"></path></svg><span class="btnlabel" data-i18n="hrMode">HR • 15 секунд</span></button>
-<button aria-controls="fitLab" aria-haspopup="dialog" class="pill fit-header-btn" id="fitBtn" type="button">
-<svg aria-hidden="true" class="utility-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
-<path d="M4 5h16M7 12h10M10 19h4"></path>
-<circle cx="8" cy="5" r="2"></circle><circle cx="15" cy="12" r="2"></circle><circle cx="12" cy="19" r="2"></circle>
-</svg>
-<span class="btnlabel copy-swap" data-copy-en="Vacancy fit" data-copy-ru="Fit вакансии">Fit вакансии</span>
-</button><button aria-expanded="false" aria-label="Открыть меню" class="icon menubtn" id="menuBtn" type="button"><svg aria-hidden="true" class="ui-icon menu-glyph" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button></div></nav><div class="mobile" id="mobile"><a class="copy-swap" data-copy-en="Value" data-copy-ru="Ценность" href="#offer">Ценность</a><a class="copy-swap" data-copy-en="Impact" data-copy-ru="Эффект" href="#impact-calculator">Эффект</a><a class="copy-swap" data-copy-en="Experience" data-copy-ru="Опыт" href="#experience">Опыт</a><a class="copy-swap" data-copy-en="Proof" data-copy-ru="Кейсы" href="#projects">Кейсы</a><a class="copy-swap" data-copy-en="Skills" data-copy-ru="Навыки" href="#skills">Навыки</a><a class="copy-swap" data-copy-en="Contact" data-copy-ru="Контакт" href="#contact">Контакт</a></div></header>
+<button aria-expanded="false" aria-label="Открыть меню" class="icon menubtn" id="menuBtn" type="button"><svg aria-hidden="true" class="ui-icon menu-glyph" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button></div></nav><div class="mobile" id="mobile"><a class="copy-swap" data-copy-en="Value" data-copy-ru="Ценность" href="#offer">Ценность</a><a class="copy-swap" data-copy-en="Impact" data-copy-ru="Эффект" href="#impact-calculator">Эффект</a><a class="copy-swap" data-copy-en="Experience" data-copy-ru="Опыт" href="#experience">Опыт</a><a class="copy-swap" data-copy-en="Proof" data-copy-ru="Кейсы" href="#projects">Кейсы</a><a class="copy-swap" data-copy-en="Skills" data-copy-ru="Навыки" href="#skills">Навыки</a><a class="copy-swap" data-copy-en="Contact" data-copy-ru="Контакт" href="#contact">Контакт</a></div></header>
 <aside aria-hidden="true" id="hrBoard">
 <div class="hr-wrap">
 <div class="hr-top">
@@ -1586,81 +1634,17 @@ section{padding:108px 0!important}.head{gap:56px!important;margin-bottom:48px!im
 </div>
 </div>
 </aside>
-<div aria-hidden="true" aria-labelledby="fitLabTitle" aria-modal="true" class="fit-lab" id="fitLab" role="dialog">
-<button aria-label="Close" class="fit-backdrop" data-fit-close="" type="button"></button>
-<div class="fit-panel">
-<header class="fit-panel-head">
-<div>
-<div class="fit-kicker">MARKOV / VACANCY FIT LAB</div>
-<h2 class="copy-swap" data-copy-en="Check vacancy alignment." data-copy-ru="Проверить соответствие вакансии." id="fitLabTitle">Проверить соответствие вакансии.</h2>
-<p class="copy-swap" data-copy-en="Paste the vacancy text. The site will estimate keyword alignment, identify the strongest role and prepare a concise application pitch." data-copy-ru="Вставьте текст вакансии. Сайт покажет ориентировочное совпадение по ключевым словам, наиболее релевантную роль и тезисы для отклика.">Вставьте текст вакансии. Сайт покажет ориентировочное совпадение по ключевым словам, наиболее релевантную роль и тезисы для отклика.</p>
-</div>
-<button aria-label="Close" class="fit-close" data-fit-close="" type="button">×</button>
-</header>
-<div class="fit-grid">
-<section class="fit-input-side">
-<label class="copy-swap" data-copy-en="Vacancy text" data-copy-ru="Текст вакансии" for="fitVacancy">Текст вакансии</label>
-<textarea data-placeholder-en="Example: We are looking for a Project Manager for a digital product. Requirements: gathering requirements, stakeholder communication, timeline, risk, backlog and team management..." data-placeholder-ru="Например: Ищем Project Manager для digital-продукта. Требования: сбор требований, коммуникация со стейкхолдерами, управление сроками, рисками, бэклогом и командой..." id="fitVacancy" rows="14" spellcheck="true"></textarea>
-<div aria-label="Role presets" class="fit-presets">
-<button data-fit-preset="pm" type="button">Project</button>
-<button data-fit-preset="ops" type="button">Operations</button>
-<button data-fit-preset="marketing" type="button">Marketing</button>
-</div>
-<div class="fit-actions">
-<button class="fit-primary" id="fitAnalyze" type="button">
-<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4M8 11h6M11 8v6"></path></svg>
-<span class="copy-swap" data-copy-en="Analyze" data-copy-ru="Проанализировать">Проанализировать</span>
-</button>
-<button class="fit-secondary" id="fitClear" type="button"><span class="copy-swap" data-copy-en="Clear" data-copy-ru="Очистить">Очистить</span></button>
-</div>
-<p class="fit-disclaimer copy-swap" data-copy-en="This is a keyword alignment index, not a hiring prediction. Add only truthful and verifiable experience to a CV." data-copy-ru="Это индекс совпадения ключевых слов, а не прогноз найма. Добавляйте в резюме только правдивый и подтверждаемый опыт.">Это индекс совпадения ключевых слов, а не прогноз найма. Добавляйте в резюме только правдивый и подтверждаемый опыт.</p>
-</section>
-<section aria-live="polite" class="fit-result-side">
-<div class="fit-empty" id="fitEmpty">
-<div class="fit-empty-icon">
-<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M8 12h8M12 8v8"></path></svg>
-</div>
-<h3 class="copy-swap" data-copy-en="Get a concise fit analysis in seconds." data-copy-ru="Получите краткий fit-разбор за несколько секунд.">Получите краткий fit-разбор за несколько секунд.</h3>
-<p class="copy-swap" data-copy-en="Copy the result, download it as TXT or focus the website on the most relevant positioning." data-copy-ru="Результат можно скопировать, скачать как TXT или использовать для переключения сайта на наиболее релевантное позиционирование.">Результат можно скопировать, скачать как TXT или использовать для переключения сайта на наиболее релевантное позиционирование.</p>
-</div>
-<div class="fit-result" hidden="" id="fitResult">
-<div class="fit-result-top">
-<div class="fit-score" id="fitScore" style="--score:0">
-<strong id="fitScoreValue">0</strong><span>/ 100</span>
-</div>
-<div>
-<span class="fit-result-label copy-swap" data-copy-en="Strongest positioning" data-copy-ru="Наиболее релевантный фокус">Наиболее релевантный фокус</span>
-<h3 id="fitBestRole">Project Manager</h3>
-<p id="fitScoreText"></p>
-</div>
-</div>
-<div class="fit-result-block">
-<span class="fit-result-label copy-swap" data-copy-en="Matched keywords" data-copy-ru="Найденные совпадения">Найденные совпадения</span>
-<div class="fit-chip-list" id="fitMatches"></div>
-</div>
-<div class="fit-result-block">
-<span class="fit-result-label copy-swap" data-copy-en="Keywords to address if truthful" data-copy-ru="Что стоит раскрыть, если это соответствует опыту">Что стоит раскрыть, если это соответствует опыту</span>
-<div class="fit-chip-list fit-chip-list-gaps" id="fitGaps"></div>
-</div>
-<div class="fit-pitch">
-<span class="fit-result-label copy-swap" data-copy-en="Application pitch" data-copy-ru="Краткий тезис для отклика">Краткий тезис для отклика</span>
-<p id="fitPitch"></p>
-</div>
-<div class="fit-result-actions">
-<button id="fitFocus" type="button"><span class="copy-swap" data-copy-en="Focus website" data-copy-ru="Сфокусировать сайт">Сфокусировать сайт</span> ↗</button>
-<button id="fitCopy" type="button"><span class="copy-swap" data-copy-en="Copy pitch" data-copy-ru="Скопировать тезис">Скопировать тезис</span> ⧉</button>
-<button id="fitDownload" type="button"><span class="copy-swap" data-copy-en="Download analysis" data-copy-ru="Скачать разбор">Скачать разбор</span> ↓</button>
-</div>
-</div>
-</section>
-</div>
-</div>
-</div>
 <main id="content">
 <section class="hero" id="top"><div class="container herogrid"><div class="reveal"><div class="available"><i></i><span class="copy-swap" data-copy-en="Open to Project Management / Operations opportunities" data-copy-ru="Открыт к предложениям в Project Management / Operations">Открыт к предложениям в Project Management / Operations</span></div><h1 class="hero-name"><span data-i18n="firstName">Павел</span><span data-i18n="lastName">Марков</span></h1><div class="eyebrow" id="roleEyebrow">PROJECT MANAGER • DIGITAL / IT • OPERATIONS</div><p class="lead copy-swap" data-copy-en="I turn ambiguity into controlled delivery: clear requirements, priorities, ownership, timelines, risks and an understandable status for leadership." data-copy-ru="Превращаю неопределённость в управляемый delivery: требования, приоритеты, ответственность, сроки, риски и понятный статус для руководителя." id="roleLead">Превращаю неопределённость в управляемый delivery: требования, приоритеты, ответственность, сроки, риски и понятный статус для руководителя.</p><div class="actions">
 <a class="primary action-with-icon" href="#contact"><svg aria-hidden="true" class="ui-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H6l-4 2 1.5-4A8.8 8.8 0 0 1 3 12a9 9 0 0 1 18 0Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg><span data-i18n="invite">Обсудить роль</span><b>↗</b></a>
-<a class="secondary action-with-icon" href="#impact-calculator"><svg aria-hidden="true" class="ui-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19V2"></path><path d="M2 19h22"></path></svg><span class="copy-swap" data-copy-en="Calculate impact" data-copy-ru="Рассчитать эффект">Рассчитать эффект</span><b>↘</b></a>
-</div><div class="hero-utility"><button id="printBtn" type="button"><span class="copy-swap" data-copy-en="Open recruiter PDF version" data-copy-ru="Открыть PDF-версию для HR">Открыть PDF-версию для HR</span><b>↓</b></button></div><div class="facts"><div><strong>Project + Operations</strong><span class="copy-swap" data-copy-en="target role" data-copy-ru="целевая роль">целевая роль</span></div><div><strong>Digital / IT</strong><span class="copy-swap" data-copy-en="preferred environment" data-copy-ru="приоритетная среда">приоритетная среда</span></div><div><strong>Brief → Result</strong><span class="copy-swap" data-copy-en="ownership principle" data-copy-ru="принцип ответственности">принцип ответственности</span></div></div></div><div class="visual reveal"><div class="orbit"></div><div class="glow"></div><figure class="portrait" data-ready="false" id="headStage"><video aria-label="Павел Марков — интерактивный портрет" id="heroHeadVideo" muted="" playsinline="" poster="hero-head2-poster.jpg" preload="auto"><source src="hero-head2.mp4" type="video/mp4"/></video><figcaption class="photolabel"><div><strong class="copy-swap" data-copy-en="Pavel Markov" data-copy-ru="Павел Марков">Павел Марков</strong><span class="copy-swap" data-copy-en="PROJECT MANAGER • OPERATIONS" data-copy-ru="PROJECT MANAGER • OPERATIONS">PROJECT MANAGER • OPERATIONS</span></div><b>PM</b></figcaption></figure></div></div><div class="scrollcue"><i></i><span data-i18n="scroll">Смотреть опыт</span></div></section>
+<a class="secondary action-with-icon" href="#impact-calculator"><svg aria-hidden="true" class="ui-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19V2"></path><path d="M2 19h22"></path></svg><span class="copy-swap" data-copy-en="Calculate impact" data-copy-ru="Рассчитать эффект">Рассчитать эффект</span><b>↘</b></a>
+</div><div class="hero-utility"><button id="printBtn" type="button"><span class="copy-swap" data-copy-en="Open recruiter PDF version" data-copy-ru="Открыть PDF-версию для HR">Открыть PDF-версию для HR</span><b>↓</b></button></div><div class="facts"><div><strong>Project + Operations</strong><span class="copy-swap" data-copy-en="target role" data-copy-ru="целевая роль">целевая роль</span></div><div><strong>Digital / IT</strong><span class="copy-swap" data-copy-en="preferred environment" data-copy-ru="приоритетная среда">приоритетная среда</span></div><div><strong>Brief → Result</strong><span class="copy-swap" data-copy-en="ownership principle" data-copy-ru="принцип ответственности">принцип ответственности</span></div></div></div><div class="visual reveal"><div class="orbit"></div><div class="glow"></div><figure class="portrait" data-ready="true" id="headStage"><div aria-label="Павел Марков — интерактивный портрет" class="head-motion-stack">
+<video autoplay="" class="head-layer head-idle" id="headIdle" loop="" muted="" playsinline="" poster="hero-head-cinematic-poster.jpg" preload="auto"><source src="head-idle.mp4" type="video/mp4"/></video>
+<video class="head-layer head-controlled" id="headLeft" muted="" playsinline="" preload="auto"><source src="head-left.mp4" type="video/mp4"/></video>
+<video class="head-layer head-controlled" id="headRight" muted="" playsinline="" preload="auto"><source src="head-right.mp4" type="video/mp4"/></video>
+<video class="head-layer head-controlled" id="headDown" muted="" playsinline="" preload="auto"><source src="head-down.mp4" type="video/mp4"/></video>
+<div aria-hidden="true" class="head-light"></div>
+</div><figcaption class="photolabel"><div><strong class="copy-swap" data-copy-en="Pavel Markov" data-copy-ru="Павел Марков">Павел Марков</strong><span class="copy-swap" data-copy-en="PROJECT MANAGER • OPERATIONS" data-copy-ru="PROJECT MANAGER • OPERATIONS">PROJECT MANAGER • OPERATIONS</span></div><b>PM</b></figcaption></figure><div aria-hidden="true" class="motion-badge"><i></i><span class="copy-swap" data-copy-en="Move the cursor — the portrait responds" data-copy-ru="Проведите курсором — портрет реагирует">Проведите курсором — портрет реагирует</span></div></div></div><div class="scrollcue"><i></i><span data-i18n="scroll">Смотреть опыт</span></div></section>
 <section class="offer-brief" id="offer">
 <div class="container">
 <div class="offer-top reveal">
@@ -1694,61 +1678,93 @@ section{padding:108px 0!important}.head{gap:56px!important;margin-bottom:48px!im
 </div>
 </div>
 </section>
-
-<section class="impact-calculator" id="impact-calculator">
+<section class="impact-calculator impact-business-case" id="impact-calculator">
 <div class="container">
 <div class="impact-head reveal">
 <div>
-<div class="eyebrow copy-swap" data-copy-en="Management impact simulator" data-copy-ru="Симулятор управленческого эффекта">Симулятор управленческого эффекта</div>
-<h2 class="impact-title copy-swap" data-copy-en="What can change&lt;br&gt;after hiring me." data-copy-ru="Что может измениться&lt;br&gt;после моего найма.">Что может измениться<br/>после моего найма.</h2>
+<div class="eyebrow copy-swap" data-copy-en="Interactive business case" data-copy-ru="Интерактивный business case">Интерактивный business case</div>
+<h2 class="impact-title copy-swap" data-copy-en="Calculate the leverage&lt;br&gt;of better management." data-copy-ru="Рассчитайте эффект&lt;br&gt;сильного управления.">Рассчитайте эффект<br/>сильного управления.</h2>
 </div>
-<p class="impact-intro copy-swap" data-copy-en="Set your team assumptions. The calculator estimates how much capacity can potentially be returned through clearer ownership, status cadence, risk control and fewer repeated approvals." data-copy-ru="Задайте параметры команды. Калькулятор оценит, сколько рабочей ёмкости потенциально можно вернуть за счёт ясной ответственности, прозрачного статуса, раннего контроля рисков и сокращения повторных согласований.">Задайте параметры команды. Калькулятор оценит, сколько рабочей ёмкости потенциально можно вернуть за счёт ясной ответственности, прозрачного статуса, раннего контроля рисков и сокращения повторных согласований.</p>
+<p class="impact-intro copy-swap" data-copy-en="Model two measurable streams: capacity returned to the team and delivery risk reduced. Adjust the assumptions to your context and get a concise hiring business case." data-copy-ru="Модель считает два измеримых потока: возвращённую ёмкость команды и снижение стоимости задержек. Настройте вводные под свою компанию и получите краткий business case найма.">Модель считает два измеримых потока: возвращённую ёмкость команды и снижение стоимости задержек. Настройте вводные под свою компанию и получите краткий business case найма.</p>
 </div>
 <div class="impact-shell reveal">
 <div class="impact-controls">
-<div class="impact-presets" aria-label="Сценарии">
-<button type="button" data-impact-preset="conservative"><span class="copy-swap" data-copy-en="Conservative" data-copy-ru="Консервативный">Консервативный</span></button>
-<button type="button" class="active" data-impact-preset="balanced"><span class="copy-swap" data-copy-en="Balanced" data-copy-ru="Сбалансированный">Сбалансированный</span></button>
-<button type="button" data-impact-preset="growth"><span class="copy-swap" data-copy-en="Growth" data-copy-ru="Рост">Рост</span></button>
+<div class="impact-control-top">
+<span class="impact-step-label copy-swap" data-copy-en="01 / Assumptions" data-copy-ru="01 / Вводные">01 / Вводные</span>
+<div aria-label="Сценарии" class="impact-presets">
+<button data-impact-preset="conservative" type="button"><span class="copy-swap" data-copy-en="Conservative" data-copy-ru="Консервативный">Консервативный</span></button>
+<button class="active" data-impact-preset="balanced" type="button"><span class="copy-swap" data-copy-en="Balanced" data-copy-ru="Сбалансированный">Сбалансированный</span></button>
+<button data-impact-preset="growth" type="button"><span class="copy-swap" data-copy-en="Growth" data-copy-ru="Рост">Рост</span></button>
+</div>
 </div>
 <div class="impact-field">
-<div class="impact-field-head"><label for="impactTeam" class="copy-swap" data-copy-en="Team size" data-copy-ru="Размер команды">Размер команды</label><output id="impactTeamOut">10</output></div>
-<input id="impactTeam" type="range" min="3" max="30" step="1" value="10"/>
-<div class="impact-range"><span>3</span><span>30</span></div>
+<div class="impact-field-head"><label class="copy-swap" data-copy-en="Team size" data-copy-ru="Размер команды" for="impactTeam">Размер команды</label><output id="impactTeamOut">10</output></div>
+<input id="impactTeam" max="50" min="3" step="1" type="range" value="10"/>
+<div class="impact-range"><span>3</span><span>50</span></div>
 </div>
 <div class="impact-field">
-<div class="impact-field-head"><label for="impactLost" class="copy-swap" data-copy-en="Hours lost per person / week" data-copy-ru="Потери времени на человека / неделю">Потери времени на человека / неделю</label><output id="impactLostOut">3,5 ч</output></div>
-<input id="impactLost" type="range" min="1" max="8" step="0.5" value="3.5"/>
-<div class="impact-range"><span>1</span><span>8</span></div>
+<div class="impact-field-head"><label class="copy-swap" data-copy-en="Coordination loss / person / week" data-copy-ru="Потери на координации / человек / неделя" for="impactLost">Потери на координации / человек / неделя</label><output id="impactLostOut">3,5 ч</output></div>
+<input id="impactLost" max="10" min="1" step="0.5" type="range" value="3.5"/>
+<div class="impact-range"><span>1</span><span>10</span></div>
 </div>
 <div class="impact-field">
-<div class="impact-field-head"><label for="impactRecovery" class="copy-swap" data-copy-en="Potentially recoverable share" data-copy-ru="Потенциально возвращаемая доля">Потенциально возвращаемая доля</label><output id="impactRecoveryOut">25%</output></div>
-<input id="impactRecovery" type="range" min="10" max="45" step="1" value="25"/>
-<div class="impact-range"><span>10%</span><span>45%</span></div>
+<div class="impact-field-head"><label class="copy-swap" data-copy-en="Potentially recoverable share" data-copy-ru="Потенциально возвращаемая доля" for="impactRecovery">Потенциально возвращаемая доля</label><output id="impactRecoveryOut">25%</output></div>
+<input id="impactRecovery" max="50" min="10" step="1" type="range" value="25"/>
+<div class="impact-range"><span>10%</span><span>50%</span></div>
 </div>
-<div class="impact-cost-row">
-<div class="impact-cost-input"><label for="impactCost" class="copy-swap" data-copy-en="Average team hour cost" data-copy-ru="Средняя стоимость часа команды">Средняя стоимость часа команды</label><input id="impactCost" type="number" min="1" max="10000" step="1" value="25" inputmode="decimal"/></div>
-<div class="impact-currency"><label for="impactCurrency" class="copy-swap" data-copy-en="Currency" data-copy-ru="Валюта">Валюта</label><select id="impactCurrency"><option value="USD">USD</option><option value="EUR">EUR</option><option value="RUB">RUB</option><option value="BYN">BYN</option></select></div>
+<div class="impact-field-grid">
+<div class="impact-field compact">
+<div class="impact-field-head"><label class="copy-swap" data-copy-en="Active initiatives" data-copy-ru="Активных инициатив" for="impactProjects">Активных инициатив</label><output id="impactProjectsOut">3</output></div>
+<input id="impactProjects" max="12" min="1" step="1" type="range" value="3"/>
+</div>
+<div class="impact-field compact">
+<div class="impact-field-head"><label class="copy-swap" data-copy-en="Delay days potentially avoided / initiative / year" data-copy-ru="Дней задержки потенциально предотвращено / инициатива / год" for="impactSavedDays">Дней задержки потенциально предотвращено / инициатива / год</label><output id="impactSavedDaysOut">4</output></div>
+<input id="impactSavedDays" max="12" min="0" step="1" type="range" value="4"/>
 </div>
 </div>
-<div class="impact-results" aria-live="polite">
-<div class="impact-ring-wrap">
-<div class="impact-ring" id="impactRing"><div><strong id="impactHoursWeek">8,8</strong><span class="copy-swap" data-copy-en="hours / week" data-copy-ru="часа / неделю">часа / неделю</span></div></div>
-<div class="impact-ring-copy"><span class="copy-swap" data-copy-en="Potentially returned capacity" data-copy-ru="Потенциально возвращаемая ёмкость">Потенциально возвращаемая ёмкость</span><p id="impactNarrative">Около 8,8 часа в неделю можно перенаправить из координационных потерь в реальную работу.</p></div>
+<details class="impact-finance" open="">
+<summary class="copy-swap" data-copy-en="Financial assumptions" data-copy-ru="Финансовые вводные">Финансовые вводные</summary>
+<div class="impact-cost-grid">
+<div class="impact-cost-input"><label class="copy-swap" data-copy-en="Average team hour cost" data-copy-ru="Средняя стоимость часа команды" for="impactCost">Средняя стоимость часа команды</label><input id="impactCost" inputmode="decimal" max="100000" min="1" step="1" type="number" value="25"/></div>
+<div class="impact-cost-input"><label class="copy-swap" data-copy-en="Cost of one delay day" data-copy-ru="Стоимость одного дня задержки" for="impactDelayCost">Стоимость одного дня задержки</label><input id="impactDelayCost" inputmode="decimal" max="10000000" min="0" step="10" type="number" value="800"/></div>
+<div class="impact-cost-input"><label class="copy-swap" data-copy-en="Monthly cost of the role" data-copy-ru="Месячная стоимость роли" for="impactRoleCost">Месячная стоимость роли</label><input id="impactRoleCost" inputmode="decimal" max="1000000" min="0" step="50" type="number" value="3000"/></div>
+<div class="impact-currency"><label class="copy-swap" data-copy-en="Currency" data-copy-ru="Валюта" for="impactCurrency">Валюта</label><select id="impactCurrency"><option value="USD">USD</option><option value="EUR">EUR</option><option value="RUB">RUB</option><option value="BYN">BYN</option></select></div>
 </div>
-<div class="impact-metrics">
-<div><span class="copy-swap" data-copy-en="Per month" data-copy-ru="В месяц">В месяц</span><strong id="impactHoursMonth">38 ч</strong></div>
-<div><span class="copy-swap" data-copy-en="Per year" data-copy-ru="В год">В год</span><strong id="impactHoursYear">455 ч</strong></div>
+</details>
+</div>
+<div aria-live="polite" class="impact-results">
+<div class="impact-result-head">
+<span class="impact-step-label copy-swap" data-copy-en="02 / Potential annual leverage" data-copy-ru="02 / Потенциальный годовой эффект">02 / Потенциальный годовой эффект</span>
+<button class="impact-copy" id="impactCopy" type="button"><span class="copy-swap" data-copy-en="Copy business case" data-copy-ru="Скопировать business case">Скопировать business case</span><b>⧉</b></button>
+</div>
+<div class="impact-total-card">
+<div class="impact-total-copy"><span class="copy-swap" data-copy-en="Potential annual impact" data-copy-ru="Потенциальный эффект за год">Потенциальный эффект за год</span><strong id="impactTotalValue">20 975 $</strong><p id="impactNarrative">Сценарий объединяет стоимость возвращённой рабочей ёмкости и потенциально предотвращённых задержек.</p></div>
+<div class="impact-ring" id="impactRing"><div><strong id="impactHoursWeek">8,8</strong><span class="copy-swap" data-copy-en="hours returned / week" data-copy-ru="часа возвращено / неделю">часа возвращено / неделю</span></div></div>
+</div>
+<div class="impact-waterfall">
+<div class="impact-waterfall-row"><div><span class="copy-swap" data-copy-en="Returned capacity" data-copy-ru="Возвращённая ёмкость">Возвращённая ёмкость</span><strong id="impactCapacityValue">11 375 $</strong></div><i><b id="impactCapacityBar"></b></i></div>
+<div class="impact-waterfall-row"><div><span class="copy-swap" data-copy-en="Delay exposure reduced" data-copy-ru="Снижение стоимости задержек">Снижение стоимости задержек</span><strong id="impactDelayValue">9 600 $</strong></div><i><b id="impactDelayBar"></b></i></div>
+</div>
+<div class="impact-metrics impact-metrics-plus">
+<div><span class="copy-swap" data-copy-en="Capacity / year" data-copy-ru="Ёмкость / год">Ёмкость / год</span><strong id="impactHoursYear">455 ч</strong></div>
 <div><span class="copy-swap" data-copy-en="Equivalent capacity" data-copy-ru="Эквивалент ёмкости">Эквивалент ёмкости</span><strong id="impactFteMonths">2,8 мес.</strong></div>
-<div class="impact-money"><span class="copy-swap" data-copy-en="Annual capacity value" data-copy-ru="Стоимость ёмкости в год">Стоимость ёмкости в год</span><strong id="impactAnnualValue">11 375 $</strong></div>
+<div><span class="copy-swap" data-copy-en="First 90 days" data-copy-ru="Первые 90 дней">Первые 90 дней</span><strong id="impactQuarterValue">5 244 $</strong></div>
+<div class="impact-money"><span class="copy-swap" data-copy-en="Estimated ROI" data-copy-ru="Оценочный ROI">Оценочный ROI</span><strong id="impactRoi">0,6×</strong></div>
+<div><span class="copy-swap" data-copy-en="Estimated payback" data-copy-ru="Оценочная окупаемость">Оценочная окупаемость</span><strong id="impactPayback">20,6 мес.</strong></div>
+<div><span class="copy-swap" data-copy-en="Net annual effect" data-copy-ru="Чистый годовой эффект">Чистый годовой эффект</span><strong id="impactNetValue">−15 025 $</strong></div>
 </div>
-<div class="impact-drivers">
-<span class="copy-swap" data-copy-en="How I would create this effect" data-copy-ru="За счёт чего создаётся эффект">За счёт чего создаётся эффект</span>
-<ul><li class="copy-swap" data-copy-en="One clear status and decision cadence" data-copy-ru="Единый ритм статусов и решений">Единый ритм статусов и решений</li><li class="copy-swap" data-copy-en="Named owners and visible dependencies" data-copy-ru="Понятные владельцы и видимые зависимости">Понятные владельцы и видимые зависимости</li><li class="copy-swap" data-copy-en="Risks surfaced before they become delays" data-copy-ru="Риски подняты до того, как становятся срывами">Риски подняты до того, как становятся срывами</li><li class="copy-swap" data-copy-en="Less rework and repeated alignment" data-copy-ru="Меньше переделок и повторных согласований">Меньше переделок и повторных согласований</li></ul>
+<div class="impact-path">
+<span class="copy-swap" data-copy-en="How the effect is created" data-copy-ru="Как создаётся эффект">Как создаётся эффект</span>
+<div class="impact-path-grid">
+<div><b>01</b><strong class="copy-swap" data-copy-en="Visibility" data-copy-ru="Прозрачность">Прозрачность</strong><p class="copy-swap" data-copy-en="One source of status, decisions and owners." data-copy-ru="Единый источник статуса, решений и владельцев.">Единый источник статуса, решений и владельцев.</p></div>
+<div><b>02</b><strong class="copy-swap" data-copy-en="Rhythm" data-copy-ru="Ритм">Ритм</strong><p class="copy-swap" data-copy-en="Predictable cadence instead of reactive coordination." data-copy-ru="Предсказуемый cadence вместо реактивной координации.">Предсказуемый cadence вместо реактивной координации.</p></div>
+<div><b>03</b><strong class="copy-swap" data-copy-en="Risk control" data-copy-ru="Контроль рисков">Контроль рисков</strong><p class="copy-swap" data-copy-en="Dependencies and blockers surfaced before deadlines." data-copy-ru="Зависимости и блокеры подняты до дедлайна.">Зависимости и блокеры подняты до дедлайна.</p></div>
 </div>
 </div>
 </div>
-<p class="impact-note copy-swap" data-copy-en="Scenario estimate, not a performance guarantee. The result depends on the current process, authority, team maturity and the accuracy of the entered assumptions." data-copy-ru="Это сценарная оценка, а не обещание результата. Эффект зависит от текущих процессов, полномочий роли, зрелости команды и точности введённых параметров.">Это сценарная оценка, а не обещание результата. Эффект зависит от текущих процессов, полномочий роли, зрелости команды и точности введённых параметров.</p>
+</div>
+<div class="impact-formula reveal"><span class="copy-swap" data-copy-en="Transparent model" data-copy-ru="Прозрачная модель">Прозрачная модель</span><p class="copy-swap" data-copy-en="Annual impact = recovered team hours × hourly cost + active initiatives × avoided delay days × delay-day cost. ROI compares this impact with the entered annual role cost." data-copy-ru="Годовой эффект = возвращённые часы команды × стоимость часа + активные инициативы × предотвращённые дни задержки × стоимость дня. ROI сравнивает этот эффект с введённой годовой стоимостью роли.">Годовой эффект = возвращённые часы команды × стоимость часа + активные инициативы × предотвращённые дни задержки × стоимость дня. ROI сравнивает этот эффект с введённой годовой стоимостью роли.</p></div>
+<p class="impact-note copy-swap" data-copy-en="Scenario estimate, not a promise or a hiring forecast. The actual outcome depends on process maturity, authority, data quality and execution." data-copy-ru="Это сценарная оценка, а не обещание или прогноз найма. Фактический результат зависит от зрелости процессов, полномочий роли, качества данных и исполнения.">Это сценарная оценка, а не обещание или прогноз найма. Фактический результат зависит от зрелости процессов, полномочий роли, качества данных и исполнения.</p>
 </div>
 </section>
 <section class="entry-plan" id="entry-plan">
@@ -1966,209 +1982,6 @@ lang(S.lang);role(S.role);
 <script>
 (() => {
   "use strict";
-  const $ = (s,r=document)=>r.querySelector(s);
-  const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
-
-  const fitLab = $("#fitLab");
-  const fitVacancy = $("#fitVacancy");
-  const fitResult = $("#fitResult");
-  const fitEmpty = $("#fitEmpty");
-  if (!fitLab || !fitVacancy || !fitResult || !fitEmpty) return;
-  let fitRole = "pm";
-  let lastAnalysis = null;
-
-  const roleLabels = {
-    ru:{pm:"Project Manager",ops:"Operations Manager",marketing:"Marketing / Brand Manager"},
-    en:{pm:"Project Manager",ops:"Operations Manager",marketing:"Marketing / Brand Manager"}
-  };
-
-  const vocab = {
-    pm:[
-      "project manager","project management","проектный менеджер","менеджер проектов","управление проектами",
-      "requirements","требования","backlog","бэклог","delivery","scope","скоуп","deadline","дедлайн","сроки",
-      "stakeholder","stakeholders","стейкхолдер","стейкхолдеры","risk","риски","roadmap","дорожная карта",
-      "jira","scrum","agile","kanban","status","статус","team","команда","prioritization","приоритизация",
-      "decomposition","декомпозиция","digital product","цифровой продукт"
-    ],
-    ops:[
-      "operations","operation manager","operations manager","операционный менеджер","операционное управление",
-      "process","processes","процесс","процессы","optimization","оптимизация","workflow","регламент","регламенты",
-      "kpi","sla","efficiency","эффективность","bottleneck","узкие места","control","контроль","coordination","координация",
-      "service","сервис","quality","качество","reporting","отчётность","automation","автоматизация","budget","бюджет",
-      "team","команда","planning","планирование"
-    ],
-    marketing:[
-      "marketing","маркетинг","brand","бренд","branding","брендинг","positioning","позиционирование","content","контент",
-      "campaign","кампания","digital","social media","социальные сети","analytics","аналитика","audience","аудитория",
-      "go-to-market","gtm","strategy","стратегия","creative","креатив","production","продакшн","communication","коммуникация",
-      "reputation","репутация","conversion","конверсия","traffic","трафик","community","сообщество"
-    ],
-    universal:[
-      "communication","коммуникация","leadership","лидерство","responsibility","ответственность","initiative","инициативность",
-      "analytical","аналитический","analysis","анализ","english","английский","remote","удаленно","ownership","самостоятельность",
-      "problem solving","решение проблем","presentation","презентация","negotiation","переговоры"
-    ]
-  };
-
-  const priorities = {
-    pm:["requirements","stakeholders","delivery","risks","backlog","deadlines","status reporting","decomposition"],
-    ops:["processes","optimization","operations","efficiency","quality","reporting","coordination","automation"],
-    marketing:["positioning","content","digital","analytics","strategy","production","audience","go-to-market"]
-  };
-
-  const presets = {
-    ru:{
-      pm:"Ищем Project Manager для digital-продукта. Задачи: сбор и уточнение требований, декомпозиция, ведение бэклога, приоритизация, контроль сроков и рисков, коммуникация со стейкхолдерами и командой, статусная отчётность.",
-      ops:"Ищем Operations Manager. Задачи: анализ и оптимизация процессов, поиск узких мест, планирование, координация команды, контроль качества и SLA, регламенты, отчётность и автоматизация повторяющихся операций.",
-      marketing:"Ищем Marketing / Brand Manager. Задачи: позиционирование, digital-стратегия, контент, аналитика, кампании, управление production, работа с аудиторией, репутацией и go-to-market."
-    },
-    en:{
-      pm:"We are looking for a Project Manager for a digital product. Responsibilities: requirements gathering, decomposition, backlog and priority management, timelines, risks, stakeholder and team communication, status reporting.",
-      ops:"We are looking for an Operations Manager. Responsibilities: process analysis and optimization, bottleneck identification, planning, team coordination, quality and SLA control, reporting and automation.",
-      marketing:"We are looking for a Marketing / Brand Manager. Responsibilities: positioning, digital strategy, content, analytics, campaigns, production management, audience, reputation and go-to-market."
-    }
-  };
-
-  const pitchTemplates = {
-    ru:{
-      pm:"Для этой вакансии наиболее релевантно позиционирование Project Manager. Павел сочетает сбор контекста, декомпозицию, коммуникацию со стейкхолдерами и контроль delivery. Сильная сторона — превращать неопределённый запрос в понятную систему задач, решений и статусов.",
-      ops:"Для этой вакансии наиболее релевантно позиционирование Operations Manager. Павел умеет находить узкие места, выстраивать процессы, распределять ответственность и поддерживать прозрачный рабочий ритм. Сильная сторона — повышать управляемость без лишней бюрократии.",
-      marketing:"Для этой вакансии наиболее релевантно позиционирование Marketing / Brand Manager. Павел соединяет позиционирование, контент, digital и production с бизнес-задачей. Сильная сторона — не только формулировать идею, но и организовывать её выпуск."
-    },
-    en:{
-      pm:"The strongest positioning for this vacancy is Project Manager. Pavel combines context gathering, decomposition, stakeholder communication and delivery control. His key strength is turning an ambiguous request into a clear system of tasks, decisions and status.",
-      ops:"The strongest positioning for this vacancy is Operations Manager. Pavel identifies bottlenecks, structures processes, assigns ownership and maintains a transparent operating cadence. His key strength is improving manageability without unnecessary bureaucracy.",
-      marketing:"The strongest positioning for this vacancy is Marketing / Brand Manager. Pavel connects positioning, content, digital and production to the business objective. His key strength is not only shaping an idea but organizing its release."
-    }
-  };
-
-  function lang(){return document.documentElement.lang==="en"?"en":"ru"}
-  function normalize(text){return text.toLowerCase().replaceAll("ё","е").replace(/[^\p{L}\p{N}+#./ -]+/gu," ")}
-
-  function openFit(){
-    fitLab.classList.add("open");fitLab.setAttribute("aria-hidden","false");document.body.classList.add("fit-open");
-    const ph=fitVacancy.dataset[lang()==="en"?"placeholderEn":"placeholderRu"];fitVacancy.placeholder=ph;
-    setTimeout(()=>fitVacancy.focus(),80);
-  }
-  function closeFit(){
-    fitLab.classList.remove("open");fitLab.setAttribute("aria-hidden","true");document.body.classList.remove("fit-open");
-  }
-
-  function termMatches(text, term){
-    const normalized=normalize(term);
-    return text.includes(normalized);
-  }
-
-  function analyze(){
-    const raw=fitVacancy.value.trim();
-    const l=lang();
-    if(raw.length<40){
-      fitVacancy.focus();
-      fitVacancy.setAttribute("aria-invalid","true");
-      fitVacancy.style.borderColor="var(--red)";
-      setTimeout(()=>fitVacancy.style.borderColor="",1000);
-      return;
-    }
-    fitVacancy.removeAttribute("aria-invalid");
-    const text=normalize(raw);
-    const categoryResults={};
-    ["pm","ops","marketing"].forEach(role=>{
-      const found=[...new Set(vocab[role].filter(term=>termMatches(text,term)))];
-      categoryResults[role]=found;
-    });
-    const universal=[...new Set(vocab.universal.filter(term=>termMatches(text,term)))];
-    fitRole=Object.entries(categoryResults).sort((a,b)=>b[1].length-a[1].length)[0][0];
-    const roleFound=categoryResults[fitRole];
-    const crossCoverage=Object.values(categoryResults).filter(items=>items.length>0).length;
-    const score=Math.min(96,Math.round(
-      Math.min(roleFound.length,10)/10*68 +
-      Math.min(universal.length,5)/5*22 +
-      crossCoverage/3*10
-    ));
-    const cleanMatches=[...new Set([...roleFound,...universal])].slice(0,14);
-    const missing=priorities[fitRole].filter(term=>!termMatches(text,term)).slice(0,6);
-    const scoreText=l==="ru"
-      ? `${score>=78?"Сильное":score>=55?"Умеренное":"Частичное"} совпадение по ключевым словам. Результат стоит проверить по фактическим требованиям и подтверждаемому опыту.`
-      : `${score>=78?"Strong":score>=55?"Moderate":"Partial"} keyword alignment. Validate it against the actual requirements and verifiable experience.`;
-
-    $("#fitScore").style.setProperty("--score",score);
-    $("#fitScoreValue").textContent=score;
-    $("#fitBestRole").textContent=roleLabels[l][fitRole];
-    $("#fitScoreText").textContent=scoreText;
-    $("#fitMatches").innerHTML=(cleanMatches.length?cleanMatches:[l==="ru"?"Совпадений пока мало":"Few matches found"]).map(x=>`<span>${x}</span>`).join("");
-    $("#fitGaps").innerHTML=(missing.length?missing:[l==="ru"?"Критичных пробелов не найдено":"No critical gaps identified"]).map(x=>`<span>${x}</span>`).join("");
-    $("#fitPitch").textContent=pitchTemplates[l][fitRole];
-    fitEmpty.hidden=true;fitResult.hidden=false;
-    lastAnalysis={score,role:fitRole,matches:cleanMatches,gaps:missing,pitch:pitchTemplates[l][fitRole],raw};
-  }
-
-  function focusWebsite(){
-    const tab=document.querySelector(`.roletab[data-role="${fitRole}"]`);
-    if(tab)tab.click();
-    closeFit();
-    setTimeout(()=>document.querySelector("#offer")?.scrollIntoView({behavior:"smooth",block:"start"}),100);
-  }
-
-  async function copyPitch(){
-    if(!lastAnalysis)return;
-    try{await navigator.clipboard.writeText(lastAnalysis.pitch)}
-    catch{prompt(lang()==="ru"?"Скопируйте текст":"Copy the text",lastAnalysis.pitch)}
-    const btn=$("#fitCopy span"),old=btn.textContent;btn.textContent=lang()==="ru"?"Скопировано":"Copied";setTimeout(()=>btn.textContent=old,1400)
-  }
-
-  function downloadAnalysis(){
-    if(!lastAnalysis)return;
-    const l=lang();
-    const text=[
-      "PAVEL MARKOV — VACANCY FIT LAB",
-      "",
-      `${l==="ru"?"Индекс совпадения":"Alignment index"}: ${lastAnalysis.score}/100`,
-      `${l==="ru"?"Фокус":"Focus"}: ${roleLabels[l][lastAnalysis.role]}`,
-      "",
-      `${l==="ru"?"Совпадения":"Matches"}: ${lastAnalysis.matches.join(", ")||"—"}`,
-      `${l==="ru"?"Раскрыть при наличии опыта":"Address if truthful"}: ${lastAnalysis.gaps.join(", ")||"—"}`,
-      "",
-      `${l==="ru"?"Тезис для отклика":"Application pitch"}:`,
-      lastAnalysis.pitch,
-      "",
-      l==="ru"
-        ?"Примечание: это индекс ключевых слов, а не прогноз найма."
-        :"Note: this is a keyword index, not a hiring prediction."
-    ].join("\n");
-    const blob=new Blob([text],{type:"text/plain;charset=utf-8"});
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement("a");a.href=url;a.download="Pavel_Markov_Vacancy_Fit.txt";a.click();
-    setTimeout(()=>URL.revokeObjectURL(url),500);
-  }
-
-  $("#fitBtn")?.addEventListener("click",openFit);
-  $$("[data-fit-close]").forEach(el=>el.addEventListener("click",closeFit));
-  $("#fitAnalyze")?.addEventListener("click",analyze);
-  $("#fitClear")?.addEventListener("click",()=>{fitVacancy.value="";fitResult.hidden=true;fitEmpty.hidden=false;lastAnalysis=null;fitVacancy.focus()});
-  $("#fitFocus")?.addEventListener("click",focusWebsite);
-  $("#fitCopy")?.addEventListener("click",copyPitch);
-  $("#fitDownload")?.addEventListener("click",downloadAnalysis);
-  $$("[data-fit-preset]").forEach(btn=>btn.addEventListener("click",()=>{fitVacancy.value=presets[lang()][btn.dataset.fitPreset];fitVacancy.focus()}));
-  $$("[data-lang]").forEach(btn=>btn.addEventListener("click",()=>setTimeout(()=>{
-    fitVacancy.placeholder=fitVacancy.dataset[lang()==="en"?"placeholderEn":"placeholderRu"];
-    if(lastAnalysis)analyze();
-  },0)));
-
-  $$("[data-dock-action]").forEach(btn=>btn.addEventListener("click",()=>{
-    const action=btn.dataset.dockAction;
-    if(action==="fit")openFit();
-    if(action==="hr")$("#hrBtn")?.click();
-    if(action==="proof")$("#projects")?.scrollIntoView({behavior:"smooth",block:"start"});
-    if(action==="pdf")window.print();
-  }));
-
-  addEventListener("keydown",e=>{if(e.key==="Escape"&&fitLab.classList.contains("open"))closeFit()});
-  fitVacancy.placeholder=fitVacancy.dataset[lang()==="en"?"placeholderEn":"placeholderRu"];
-})();
-</script>
-<script>
-(() => {
-  "use strict";
   const menuBtn = document.getElementById("menuBtn");
   if (!menuBtn) return;
   const menuIcon = `<svg class="ui-icon menu-glyph" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>`;
@@ -2182,137 +1995,119 @@ lang(S.lang);role(S.role);
   renderIcon();
 })();
 </script>
-<script id="interactive-head-script">
+<script id="cinematic-head-script">
 (() => {
   "use strict";
-  const video = document.getElementById("heroHeadVideo");
-  const stage = document.getElementById("headStage");
-  const visual = stage?.closest(".visual");
-  if (!video || !stage || !visual) return;
-
-  // Natural anchor frames in hero-head2.mp4: centre, horizontal turns, down and up.
-  const anchors = { center: 0.18, left: 1.50, right: 2.50, down: 3.82, up: 5.55 };
-  const fine = matchMedia("(pointer:fine)").matches;
-  const reduced = matchMedia("(prefers-reduced-motion:reduce)").matches;
-  const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
-  let target = anchors.center;
-  let virtualTime = anchors.center;
-  let lastSeek = 0;
-  let raf = 0;
-
-  function setTarget(clientX, clientY) {
-    const r = visual.getBoundingClientRect();
-    const x = clamp((clientX - (r.left + r.width / 2)) / (r.width * .55), -1, 1);
-    const y = clamp((clientY - (r.top + r.height / 2)) / (r.height * .55), -1, 1);
-    const magnitude = Math.hypot(x, y);
-
-    if (magnitude < .19) target = anchors.center;
-    else if (Math.abs(x) > Math.abs(y) * .82) target = x < 0 ? anchors.left : anchors.right;
-    else target = y < 0 ? anchors.up : anchors.down;
-
-    stage.style.setProperty("--pm-rx", `${x * 3.2}deg`);
-    stage.style.setProperty("--pm-ry", `${-y * 2.4}deg`);
-    stage.style.setProperty("--pm-x", `${x * 5}px`);
-    stage.style.setProperty("--pm-y", `${y * 4}px`);
-  }
-
-  function reset() {
-    target = anchors.center;
-    stage.style.setProperty("--pm-rx", "0deg");
-    stage.style.setProperty("--pm-ry", "0deg");
-    stage.style.setProperty("--pm-x", "0px");
-    stage.style.setProperty("--pm-y", "0px");
-  }
-
-  function tick(now) {
-    virtualTime += (target - virtualTime) * .115;
-    if (video.readyState >= 1 && now - lastSeek > 48 && Math.abs(video.currentTime - virtualTime) > .018) {
-      video.currentTime = clamp(virtualTime, 0, video.duration || 8);
-      lastSeek = now;
+  const stage=document.getElementById("headStage");
+  const hero=stage?.closest(".hero");
+  const idle=document.getElementById("headIdle");
+  const left=document.getElementById("headLeft");
+  const right=document.getElementById("headRight");
+  const down=document.getElementById("headDown");
+  if(!stage||!hero||!idle||!left||!right||!down) return;
+  const fine=matchMedia("(pointer:fine)").matches;
+  const reduced=matchMedia("(prefers-reduced-motion:reduce)").matches;
+  const interactive=!reduced&&(fine||navigator.maxTouchPoints===0);
+  const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+  const smooth=(a,b,v)=>{const t=clamp((v-a)/(b-a),0,1);return t*t*(3-2*t)};
+  const controlled=[left,right,down];
+  let targetX=0,targetY=0,x=0,y=0,raf=0,lastSeek=0,lastMove=performance.now(),visible=true;
+  controlled.forEach(v=>{v.pause();v.currentTime=0;});
+  idle.playbackRate=.82;
+  const playIdle=()=>idle.play().catch(()=>{});
+  playIdle();
+  const seek=(video,progress)=>{
+    if(!Number.isFinite(video.duration)||video.duration<=0) return;
+    const t=clamp(progress,0,.995)*video.duration;
+    if(Math.abs(video.currentTime-t)>.012){
+      try{video.currentTime=t}catch(e){}
     }
-    raf = requestAnimationFrame(tick);
+  };
+  const move=e=>{
+    if(!visible) return;
+    const r=stage.getBoundingClientRect();
+    targetX=clamp((e.clientX-(r.left+r.width/2))/(innerWidth*.38),-1,1);
+    targetY=clamp((e.clientY-(r.top+r.height/2))/(innerHeight*.42),-1,1);
+    lastMove=performance.now();
+  };
+  const reset=()=>{targetX=0;targetY=0};
+  const tick=now=>{
+    if(now-lastMove>1800){targetX*=.96;targetY*=.96}
+    x+=(targetX-x)*.085;y+=(targetY-y)*.085;
+    const leftP=smooth(.07,.96,Math.max(0,-x));
+    const rightP=smooth(.07,.96,Math.max(0,x));
+    const downP=smooth(.1,.94,Math.max(0,y));
+    const horizontal=Math.max(leftP,rightP)*(1-downP*.46);
+    const l=leftP*(1-downP*.46),r=rightP*(1-downP*.46),d=downP*(1-horizontal*.35);
+    const active=clamp(Math.max(l,r,d),0,.94);
+    stage.style.setProperty("--left-opacity",l.toFixed(3));
+    stage.style.setProperty("--right-opacity",r.toFixed(3));
+    stage.style.setProperty("--down-opacity",d.toFixed(3));
+    stage.style.setProperty("--idle-opacity",(1-active*.92).toFixed(3));
+    stage.style.setProperty("--pm-rx",`${x*5.2}deg`);
+    stage.style.setProperty("--pm-ry",`${-y*3.4}deg`);
+    stage.style.setProperty("--pm-x",`${x*12}px`);
+    stage.style.setProperty("--pm-y",`${y*8}px`);
+    stage.style.setProperty("--shine-x",`${50+x*26}%`);
+    stage.style.setProperty("--shine-y",`${30+y*18}%`);
+    if(now-lastSeek>32){seek(left,leftP);seek(right,rightP);seek(down,downP);lastSeek=now}
+    raf=requestAnimationFrame(tick);
+  };
+  if(interactive){
+    addEventListener("pointermove",move,{passive:true});
+    addEventListener("blur",reset);document.addEventListener("mouseleave",reset);
+    const observer=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible){playIdle();if(!raf)raf=requestAnimationFrame(tick)}else{idle.pause();if(raf){cancelAnimationFrame(raf);raf=0}}},{threshold:.05});
+    observer.observe(hero);raf=requestAnimationFrame(tick);
   }
-
-  function start() {
-    video.pause();
-    video.currentTime = anchors.center;
-    stage.dataset.ready = "true";
-    if (fine && !reduced) {
-      visual.addEventListener("pointermove", e => setTarget(e.clientX, e.clientY), { passive: true });
-      visual.addEventListener("pointerleave", reset, { passive: true });
-      raf = requestAnimationFrame(tick);
-    } else if (!reduced) {
-      video.loop = true;
-      video.playbackRate = .72;
-      video.play().catch(() => {});
-    }
-  }
-
-  if (video.readyState >= 1) start();
-  else video.addEventListener("loadedmetadata", start, { once: true });
-
-  video.addEventListener("error", () => {
-    stage.dataset.ready = "true";
-    stage.style.backgroundImage = "url('hero-head2-poster.jpg')";
-  });
-
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden && raf) cancelAnimationFrame(raf);
-    else if (!document.hidden && fine && !reduced) raf = requestAnimationFrame(tick);
-  });
+  document.addEventListener("visibilitychange",()=>{if(document.hidden){idle.pause();if(raf){cancelAnimationFrame(raf);raf=0}}else if(visible){playIdle();if(interactive&&!raf)raf=requestAnimationFrame(tick)}});
 })();
-</script>
-<script id="impact-calculator-script">
+</script><script id="impact-business-case-script">
 (() => {
   "use strict";
-  const root = document.getElementById("impact-calculator");
-  if (!root) return;
-  const $ = (s) => root.querySelector(s);
-  const $$ = (s) => [...root.querySelectorAll(s)];
-  const team = $("#impactTeam");
-  const lost = $("#impactLost");
-  const recovery = $("#impactRecovery");
-  const cost = $("#impactCost");
-  const currency = $("#impactCurrency");
-  const presets = {
-    conservative:{team:6,lost:2.5,recovery:15,cost:20},
-    balanced:{team:10,lost:3.5,recovery:25,cost:25},
-    growth:{team:16,lost:5.5,recovery:35,cost:30}
+  const root=document.getElementById("impact-calculator");if(!root)return;
+  const $=s=>root.querySelector(s), $$=s=>[...root.querySelectorAll(s)];
+  const fields={team:$("#impactTeam"),lost:$("#impactLost"),recovery:$("#impactRecovery"),projects:$("#impactProjects"),saved:$("#impactSavedDays"),cost:$("#impactCost"),delay:$("#impactDelayCost"),role:$("#impactRoleCost"),currency:$("#impactCurrency")};
+  const presets={
+    conservative:{team:7,lost:2.5,recovery:15,projects:2,saved:2,cost:25,delay:350,role:2500},
+    balanced:{team:10,lost:3.5,recovery:25,projects:3,saved:4,cost:25,delay:800,role:3000},
+    growth:{team:18,lost:4.5,recovery:32,projects:5,saved:6,cost:35,delay:1500,role:4000}
   };
-  const num = (v) => Number.parseFloat(v) || 0;
-  const locale = () => document.documentElement.lang === "en" ? "en-US" : "ru-RU";
-  const one = (v) => new Intl.NumberFormat(locale(),{maximumFractionDigits:1}).format(v);
-  const whole = (v) => new Intl.NumberFormat(locale(),{maximumFractionDigits:0}).format(v);
-  const money = (v) => new Intl.NumberFormat(locale(),{style:"currency",currency:currency.value,maximumFractionDigits:0}).format(v);
-  const setRange = (el) => {
-    const min=num(el.min), max=num(el.max), value=num(el.value);
-    el.style.setProperty("--range", `${((value-min)/(max-min))*100}%`);
-  };
+  const symbols={USD:"$",EUR:"€",RUB:"₽",BYN:"Br"};
+  const num=(el,f=0)=>Math.max(0,Number(el?.value)||f);
+  const lang=()=>document.documentElement.lang==="en"?"en":"ru";
+  const locale=()=>lang()==="en"?"en-US":"ru-RU";
+  const fmt=(n,d=0)=>new Intl.NumberFormat(locale(),{maximumFractionDigits:d,minimumFractionDigits:d}).format(n);
+  const money=n=>`${new Intl.NumberFormat(locale(),{maximumFractionDigits:0}).format(Math.round(n))} ${symbols[fields.currency.value]||fields.currency.value}`;
+  const rangeFill=el=>{const p=(num(el)-Number(el.min))/(Number(el.max)-Number(el.min))*100;el.style.setProperty("--range",`${p}%`)};
+  let lastSummary="";
   function render(){
-    [team,lost,recovery].forEach(setRange);
-    const t=num(team.value), l=num(lost.value), r=num(recovery.value), c=Math.max(0,num(cost.value));
-    const week=t*l*(r/100), month=week*4.33, year=week*52, fte=year/160, annual=year*c;
-    $("#impactTeamOut").textContent=whole(t);
-    $("#impactLostOut").textContent=`${one(l)} ${document.documentElement.lang === "en" ? "h" : "ч"}`;
-    $("#impactRecoveryOut").textContent=`${whole(r)}%`;
-    $("#impactHoursWeek").textContent=one(week);
-    $("#impactHoursMonth").textContent=`${whole(month)} ${document.documentElement.lang === "en" ? "h" : "ч"}`;
-    $("#impactHoursYear").textContent=`${whole(year)} ${document.documentElement.lang === "en" ? "h" : "ч"}`;
-    $("#impactFteMonths").textContent=`${one(fte)} ${document.documentElement.lang === "en" ? "mo." : "мес."}`;
-    $("#impactAnnualValue").textContent=money(annual);
-    $("#impactRing").style.setProperty("--impact-angle", `${Math.min(360,Math.max(36,r*7.2))}deg`);
-    $("#impactNarrative").textContent=document.documentElement.lang === "en"
-      ? `About ${one(week)} hours per week could be redirected from coordination loss into delivery work under these assumptions.`
-      : `Около ${one(week)} часа в неделю можно перенаправить из координационных потерь в реальную работу при заданных параметрах.`;
+    Object.values(fields).filter(el=>el?.type==="range").forEach(rangeFill);
+    const t=num(fields.team),l=num(fields.lost),r=num(fields.recovery)/100,p=num(fields.projects),days=num(fields.saved),hourCost=num(fields.cost),delayCost=num(fields.delay),roleMonthly=num(fields.role);
+    const week=t*l*r,yearHours=week*52,fteMonths=yearHours/160,capacityValue=yearHours*hourCost,delayValue=p*days*delayCost,total=capacityValue+delayValue,quarter=total/4,annualRole=roleMonthly*12,roi=annualRole>0?total/annualRole:0,payback=total>0?annualRole/(total/12):0,net=total-annualRole;
+    $("#impactTeamOut").textContent=fmt(t);$("#impactLostOut").textContent=`${fmt(l,1)} ${lang()==="en"?"h":"ч"}`;$("#impactRecoveryOut").textContent=`${fmt(r*100)}%`;$("#impactProjectsOut").textContent=fmt(p);$("#impactSavedDaysOut").textContent=fmt(days);
+    $("#impactHoursWeek").textContent=fmt(week,1);$("#impactTotalValue").textContent=money(total);$("#impactCapacityValue").textContent=money(capacityValue);$("#impactDelayValue").textContent=money(delayValue);$("#impactHoursYear").textContent=`${fmt(yearHours)} ${lang()==="en"?"h":"ч"}`;$("#impactFteMonths").textContent=`${fmt(fteMonths,1)} ${lang()==="en"?"mo.":"мес."}`;$("#impactQuarterValue").textContent=money(quarter);$("#impactRoi").textContent=annualRole>0?`${fmt(roi,1)}×`:"—";$("#impactPayback").textContent=annualRole>0&&total>0?`${fmt(payback,1)} ${lang()==="en"?"mo.":"мес."}`:"—";$("#impactNetValue").textContent=money(net);
+    const capPct=total>0?capacityValue/total*100:50,delayPct=100-capPct;$("#impactCapacityBar").style.width=`${Math.max(4,capPct)}%`;$("#impactDelayBar").style.width=`${Math.max(4,delayPct)}%`;$("#impactRing").style.setProperty("--impact-angle",`${Math.min(350,Math.max(35,r*720))}deg`);
+    const narrative=lang()==="en"?`The model estimates ${fmt(yearHours)} hours of annual capacity and ${money(delayValue)} of reduced delay exposure.`:`Модель оценивает ${fmt(yearHours)} часов возвращённой ёмкости в год и ${money(delayValue)} потенциально сниженной стоимости задержек.`;
+    $("#impactNarrative").textContent=narrative;
+    lastSummary=lang()==="en"?`Hiring business case: potential annual impact ${money(total)}. Returned capacity: ${fmt(yearHours)} hours (${money(capacityValue)}). Reduced delay exposure: ${money(delayValue)}. Equivalent capacity: ${fmt(fteMonths,1)} FTE-months. Estimated ROI: ${annualRole>0?fmt(roi,1)+"×":"not set"}; payback: ${annualRole>0&&total>0?fmt(payback,1)+" months":"not set"}. Scenario estimate only.`:`Business case найма: потенциальный годовой эффект ${money(total)}. Возвращённая ёмкость: ${fmt(yearHours)} ч (${money(capacityValue)}). Снижение стоимости задержек: ${money(delayValue)}. Эквивалент ёмкости: ${fmt(fteMonths,1)} мес. специалиста. Оценочный ROI: ${annualRole>0?fmt(roi,1)+"×":"не задан"}; окупаемость: ${annualRole>0&&total>0?fmt(payback,1)+" мес.":"не задана"}. Сценарная оценка.`;
   }
-  [team,lost,recovery,cost,currency].forEach(el=>el.addEventListener("input",()=>{$$("[data-impact-preset]").forEach(b=>b.classList.remove("active"));render()}));
-  $$('[data-impact-preset]').forEach(btn=>btn.addEventListener('click',()=>{
-    const p=presets[btn.dataset.impactPreset];
-    team.value=p.team;lost.value=p.lost;recovery.value=p.recovery;cost.value=p.cost;
-    $$('[data-impact-preset]').forEach(b=>b.classList.toggle('active',b===btn));render();
-  }));
-  document.querySelectorAll('[data-lang]').forEach(btn=>btn.addEventListener('click',()=>setTimeout(render,0)));
+  Object.values(fields).forEach(el=>el?.addEventListener("input",()=>{$$("[data-impact-preset]").forEach(b=>b.classList.remove("active"));render()}));
+  $$("[data-impact-preset]").forEach(btn=>btn.addEventListener("click",()=>{const p=presets[btn.dataset.impactPreset];Object.entries(p).forEach(([k,v])=>{if(fields[k])fields[k].value=v});$$("[data-impact-preset]").forEach(b=>b.classList.toggle("active",b===btn));render()}));
+  $("#impactCopy")?.addEventListener("click",async e=>{try{await navigator.clipboard.writeText(lastSummary);const b=e.currentTarget;b.classList.add("copied");const span=b.querySelector("span");const old=span.innerHTML;span.textContent=lang()==="en"?"Copied":"Скопировано";setTimeout(()=>{b.classList.remove("copied");span.innerHTML=old},1500)}catch(err){}});
+  document.querySelectorAll("[data-lang]").forEach(btn=>btn.addEventListener("click",()=>setTimeout(render,30)));
   render();
 })();
-</script>
-</body></html>
+</script><style id="final-identity-fix">
+/* FINAL IDENTITY LOCK — name is one coherent typographic unit */
+html body.recruiter-first .hero h1.hero-name{display:flex!important;flex-wrap:wrap!important;align-items:baseline!important;column-gap:.12em!important;row-gap:.01em!important;font-family:var(--sans)!important;font-size:clamp(4rem,5.55vw,6.55rem)!important;font-weight:800!important;line-height:.9!important;letter-spacing:-.068em!important}
+html body.recruiter-first .hero h1.hero-name>span,
+html body.recruiter-first .hero h1.hero-name>span:first-child,
+html body.recruiter-first .hero h1.hero-name>span:last-child{display:inline-block!important;flex:0 0 auto!important;margin:0!important;padding:0!important;font-family:var(--sans)!important;font-size:1em!important;font-style:normal!important;font-weight:800!important;line-height:.9!important;letter-spacing:-.068em!important;text-transform:none!important;color:#f8f5ef!important;background:none!important;background-image:none!important;-webkit-background-clip:border-box!important;background-clip:border-box!important;-webkit-text-fill-color:#f8f5ef!important;text-shadow:0 28px 90px rgba(0,0,0,.38)!important}
+html body.recruiter-first .hero h1.hero-name:after{margin-top:17px!important}
+html body.recruiter-first .portrait{background:#090a0c url('hero-head-cinematic-poster.jpg') center/cover no-repeat!important}
+html body.recruiter-first .motion-badge{top:4%!important;right:3%!important}
+@media(max-width:760px){html body.recruiter-first .hero h1.hero-name{font-size:clamp(3.15rem,14vw,4.35rem)!important;column-gap:.1em!important;row-gap:-.02em!important;line-height:.84!important;margin:22px 0 20px!important}html body.recruiter-first .hero h1.hero-name>span,html body.recruiter-first .hero h1.hero-name>span:first-child,html body.recruiter-first .hero h1.hero-name>span:last-child{line-height:.84!important}html body.recruiter-first .hero h1.hero-name:after{margin-top:13px!important}}
+
+html body.recruiter-first .hero h1.hero-name>span:last-child{margin-left:.08em!important}
+html body.recruiter-first .hero h1.hero-name>span:last-child:after{display:none!important;content:none!important}
+</style></body></html>
